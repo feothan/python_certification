@@ -38,9 +38,19 @@ def draw_board():
     for c in range(COLUMNS):
         for r in range(ROWS):
             if board[r][c] == 1:
-                window.blit(FULL, ((c*200)+50,(r*200)+50))
+                window.blit(ONE, ((c*200)+50,(r*200)+50))
             elif board[r][c] == 2:
+                window.blit(TWO, ((c*200)+50,(r*200)+50))
+            elif board[r][c] == 3:
+                window.blit(THREE, ((c*200)+50,(r*200)+50))
+            elif board[r][c] == 4:
                 window.blit(FOUR, ((c*200)+50,(r*200)+50))
+            elif board[r][c] == -3:
+                window.blit(FULL, ((c*200)+50,(r*200)+50))
+            elif board[r][c] == -2:
+                window.blit(CRESCENT, ((c*200)+50,(r*200)+50))
+            elif board[r][c] == -1:
+                window.blit(SLIVER, ((c*200)+50,(r*200)+50))
     pygame.display.update()
 
 def draw_lines():
@@ -85,6 +95,7 @@ window.fill(WHITE)
 draw_lines()
 pygame.display.update()
 pygame.time.wait(2000)
+draw_board()
 
 while not game_over:
     for event in pygame.event.get():
