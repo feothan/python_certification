@@ -28,7 +28,7 @@ def parse_text(user_input):
     # Turn the input into a list of words.
     just_words = stripped_move.split(" ")
 
-    # Make a list of verbs (by number) that are in the input.
+    # Make a list of verbs that are in the input.
     active_verbs = []
     for word in just_words:
         if word in verbs:
@@ -39,7 +39,7 @@ def parse_text(user_input):
     for object in objects:
         objects_list.append(object[2])
 
-    # Make a list of objects (by number) that are in the input.
+    # Make a list of objects that are in the input.
     active_nouns = []
     for word in just_words:
         if word in objects_list:
@@ -108,11 +108,11 @@ while game_over == False:
         print("I don't understand.\n")
         continue
 
-    # Handle the verb get/take
-    if verb[0] == "get" or verb[0] == "take":
-        if noun[0] in objects[][2]:
-            current_noun = objects[][2].index(noun[0])
-    print(current_noun)
+    # # Handle the verb get/take
+    # if verb[0] == "get" or verb[0] == "take":
+    #     if noun[0] in objects[][2]:
+    #         current_noun = objects[][2].index(noun[0])
+    # print(current_noun)
 
 
     print(f'You can {verb[0]} the {noun[0]}.\n')
