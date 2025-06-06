@@ -1,5 +1,6 @@
 # Set the stage.
 from scripts.regsetup import description
+from twisted.conch.scripts.tkconch import exitStatus
 
 game_over = False
 location = "cistern"
@@ -57,7 +58,8 @@ objects = {
     }
 }
 
-inventory = []
+inventory = ["schmoozle"]
+
 verbs = ['look', 'examine', 'get', 'take', 'drop', 'eat', 'drink', 'open', 'close', 'burn', 'break', 'twist', 'throw', 'attack', 'use', 'say', 'in']
 
 # Parse user input for verbs and nouns and return a list of each.
@@ -96,24 +98,20 @@ while game_over == False:
     print(f'Location: {location}')
     print(f'Description: {rooms[location]['description']}')
 
-    # Show directions you can go.
-    direction_names = ["north ", "south ", "east ", "west ", "up ", "down "]
-    directions = ""
-    for i in range(6):
-        direction_letter = direction_names[i]
-        if direction_letter in rooms[location]['exits']:
-            directions += direction_names[rooms[location]['exits'].index(rooms[location]['exits'])]
-    print(f'Directions: {directions}')
+    # Show directions you can go; could have displayed the 'n', 's', etc., but this is prettier.
+    exits = ""
+    compass_points = ['north', 'south', 'east', 'west', 'up', 'down']
+    for exit in rooms[location]['exits']:
+        for each in compass_points:
+            if exit == each[0]:
+                exits += each + " "
+    print(f'Exits: {exits}')
 
     # Show any objects that are in the room.
-    objects_present = ""
-    for each in range(len(objects)):
-        if objects[each][3] == location:
-            objects_present += str(objects[each][0]) + " "
-    if objects_present:
-        print(f'Objects: {objects_present}\n')
-    else:
-        print(f'Objects: none')
+    objects = ""
+    for object in rooms[location]['contents']
+        objects += object + "  "
+    print(f'Objects: {objects}')
 
     # Ask for player input.
     player_move = input("What do you do? ")
