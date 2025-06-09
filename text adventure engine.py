@@ -167,51 +167,57 @@ while game_over == False:
 
     # Call the function to parse for verbs and nouns, check to make sure you get at least one of each.
     verb, noun = parse_text(player_move)
-    if len(verb) < 1 or len(noun) < 1:
-        print("I don't understand.\n")
+    if len(verb) == 0 and len(noun) > 0:
+        print(f"What do you want me to do to {objects[noun[0]]["display name"]}?\n")
+        continue
+    if len(noun) == 0 and len(verb) > 0:
+        print(f"What do you want me to {verb[0]}?\n")
         continue
 
     # Handle the verb look/examine
     if verb[0] in ['look', 'examine']:
-        if noun[0] in objects:
-            object_location = objects[noun[0]]['location']
-            if object_location == location or object_location == "inventory":
-                print(objects[noun[0]]["description"], "\n")
-                continue
-            else:
-                print("I don't see that here.\n")
-                continue
+        object_location = objects[noun[0]]['location']
+        if object_location == location or object_location == "inventory":
+            print(objects[noun[0]]["description"], "\n")
+            continue
+        else:
+            print("I don't see that here.\n")
+            continue
 
     # Handle the verb get/take
     if verb[0] in ['get', 'take']:
-        if noun[0] in objects:
-            object_location = objects[noun[0]]['location']
-            if object_location == "inventory":
-                print("You are already carrying that.\n")
-                continue
-            elif object_location == location:
-                objects[noun[0]]['location'] = "inventory"
-                print("Okay.\n")
-                continue
-            else:
-                print("I don't see that here.\n")
-                continue
+        object_location = objects[noun[0]]['location']
+        if object_location == "inventory":
+            print("You are already carrying that.\n")
+            continue
+        elif object_location == location:
+            objects[noun[0]]['location'] = "inventory"
+            print("Okay.\n")
+            continue
+        else:
+            print("I don't see that here.\n")
+            continue
 
     # Handle the verb drop/place
     if verb[0] in ['drop', 'place']:
-        if noun[0] in objects:
-            object_location = objects[noun[0]]['location']
-            if object_location == "inventory":
-                objects[noun[0]]['location'] = location
-                print("You drop it.\n")
-                continue
-            elif object_location == location:
-                print("You're not holding it.\n")
-                continue
-            else:
-                print("I don't see that here.")
-                continue
+        object_location = objects[noun[0]]['location']
+        if object_location == "inventory":
+            objects[noun[0]]['location'] = location
+            print("You drop it.\n")
+            continue
+        elif object_location == location:
+            print("You're not holding it.\n")
+            continue
+        else:
+            print("I don't see that here.")
+            continue
 
+    # Handle the verb eat
+    if verb[0] == 'eat':
+        object_location = objects[noun[0]]['location']
+        if object_location == "inventory":
+            print("You eat it.\n")
+            continue
     # print(f'You can {verb[0]} the {noun[0]}.\n')
 
 
