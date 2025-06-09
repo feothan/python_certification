@@ -42,27 +42,29 @@ rooms = {
 }
 
 objects = {
-    "bat": {
+    'bat': {
         'display name': "a baseball bat",
         'description': "It's a Louisville Slugger.",
         'location': "tunnel"
     },
-    "cat": {
+    'cat': {
         'display name': "a small cat",
         'description': "It's a long-haired black cat named Harold Jr.",
         'location': "cistern"
     },
-    "schmoozle": {
+    'schmoozle': {
         'display name': "the schmoozle",
         'description': "It's everything you expect it to be.",
         'location': 'clearing'
     },
-    "rabbit": {
+    'rabbit': {
         'display name': "the rabbit",
         'description': "This is the rabbit of your dreams.",
         'location': "cistern"
     }
 }
+
+edible_objects = ['schmoozle', 'rabbit']
 
 verbs = ['look', 'examine', 'get', 'take', 'drop', 'place', 'eat', 'drink', 'open', 'close', 'burn', 'break', 'twist', 'throw', 'attack', 'use', 'say', 'in']
 
@@ -165,11 +167,25 @@ while game_over == False:
         is_first_time = False
         continue
 
-    # Call the function to parse for verbs and nouns, check to make sure you get at least one of each.
+    # Check for failed directional attempts.
+    if player_move in ['n', 's', 'e', 'w', 'u', 'd']:
+        print("That direction isn't an option.\n")
+        continue
+
+    # Check for blank player_moves and weird attempts at direction.
+    if player_move == "" or len(player_move) == 1:
+        print("?\n")
+        continue
+
+    # Call the function to parse for verbs and nouns, check to make sure you get at least one of each and handle cases.
     verb, noun = parse_text(player_move)
     if len(verb) == 0 and len(noun) > 0:
-        print(f"What do you want me to do to {objects[noun[0]]["display name"]}?\n")
-        continue
+        if objects[noun[0]]["location"] == "inventory" or objects[noun[0]]["location"] == location:
+            print(f"What do you want me to do to {objects[noun[0]]["display name"]}?\n")
+            continue
+        else:
+            print(f"What do you want me to do?\n")
+            continue
     if len(noun) == 0 and len(verb) > 0:
         print(f"What do you want me to {verb[0]}?\n")
         continue
@@ -216,9 +232,20 @@ while game_over == False:
     if verb[0] == 'eat':
         object_location = objects[noun[0]]['location']
         if object_location == "inventory":
-            print("You eat it.\n")
+            if noun[0] in edible_objects:
+                print("You eat it.\n")
+                objects[noun[0]]['location'] = "oblivion"
+                continue
+            else:
+                print("That's not edible.\n")
+                continue
+        elif object_location == location:
+            print("I should probably pick it up first.\n")
             continue
-    # print(f'You can {verb[0]} the {noun[0]}.\n')
+        else:
+            print("That's not here.\n")
+        continue
+
 
 
 
