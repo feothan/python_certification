@@ -61,10 +61,29 @@ objects = {
         'display name': "the rabbit",
         'description': "This is the rabbit of your dreams.",
         'location': "cistern"
+    },
+    'lighter': {
+        'display name': "a gold lighter",
+        'description': "It has the initials 'QPN' on it.",
+        'location': "dead end"
     }
 }
 
+# This is where puzzle logic and a lot of the fun goes. :)
+def special_cases(verb, noun):
+    if verb[0] == 'eat' and noun[0] == 'schmoozle':
+        print("Once it makes eye contact with you, you're lost. You can't go through with it!\n")
+        return True
+    if verb[0] == 'burn' and noun[0] == 'bat' and 'lighter' in noun:
+        print("It goes up in a lot of smoke!\n")
+        objects[noun[0]]["display name"] = 'a crispy bat'
+        objects[noun[0]]["description"] = "It's a shadow of its former self."
+        return True
+    return False
+
+
 edible_objects = ['schmoozle', 'rabbit']
+flammable_objects = ['bat', 'cat']
 
 verbs = ['look', 'examine', 'get', 'take', 'drop', 'place', 'eat', 'drink', 'open', 'close', 'burn', 'break', 'twist', 'throw', 'attack', 'use', 'say', 'in']
 
@@ -173,7 +192,7 @@ while game_over == False:
         continue
 
     # Check for blank player_moves and weird attempts at direction.
-    if player_move == "" or len(player_move) == 1:
+    if player_move == "" or len(player_move) < 3:
         print("?\n")
         continue
 
@@ -233,8 +252,11 @@ while game_over == False:
         object_location = objects[noun[0]]['location']
         if object_location == "inventory":
             if noun[0] in edible_objects:
-                print("You eat it.\n")
-                objects[noun[0]]['location'] = "oblivion"
+                if special_cases(verb, noun) == True:
+                    continue
+                else:
+                    print("You eat it.\n")
+                    objects[noun[0]]['location'] = "oblivion"
                 continue
             else:
                 print("That's not edible.\n")
@@ -246,6 +268,31 @@ while game_over == False:
             print("That's not here.\n")
         continue
 
+    # Handle the verb burn
+    if verb[0] == 'burn': # Is it the right verb?
+        object_location = objects[noun[0]]['location'] # Is the noun either here...
+        if object_location == "inventory": # Or in the inventory?
+            if noun[0] in flammable_objects: # Is the noun on the list of objects you can burn?
+                if "lighter" in noun: # Does the player mention the lighter?
+                    if objects["lighter"]["location"] == "inventory": # Are you holding the lighter?
+                        if special_cases(verb, noun) == True:
+                            continue
+                        else:
+                            print("You burn it.\n")
+                            objects[noun[0]]['location'] = "oblivion"
+                            continue
+                else:
+                    print("Burn it with what?\n")
+                    continue
+            else:
+                print("That's not flammable.\n")
+                continue
+        elif object_location == location:
+            print("I should probably pick it up first.\n")
+            continue
+        else:
+            print("That's not here.\n")
+        continue
 
 
 
