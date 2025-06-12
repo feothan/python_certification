@@ -79,6 +79,11 @@ def special_cases(verb, noun):
         objects[noun[0]]["display name"] = 'a crispy bat'
         objects[noun[0]]["description"] = "It's a shadow of its former self."
         return True
+    if verb[0] in ['drop', 'place'] and noun[0] == 'cat':
+        print("The poor cat, having escaped your grasp, runs as far away as it can get.\n")
+        objects[noun[0]]["display name"] = 'a spooked cat'
+        objects[noun[0]]["location"] = 'dead end'
+        return True
     return False
 
 
@@ -213,8 +218,11 @@ while game_over == False:
     if verb[0] in ['look', 'examine']:
         object_location = objects[noun[0]]['location']
         if object_location == location or object_location == "inventory":
-            print(objects[noun[0]]["description"], "\n")
-            continue
+            if special_cases(verb, noun) == True:
+                continue
+            else:
+                print(objects[noun[0]]["description"], "\n")
+                continue
         else:
             print("I don't see that here.\n")
             continue
@@ -226,9 +234,12 @@ while game_over == False:
             print("You are already carrying that.\n")
             continue
         elif object_location == location:
-            objects[noun[0]]['location'] = "inventory"
-            print("Okay.\n")
-            continue
+            if special_cases(verb, noun) == True:
+                continue
+            else:
+                objects[noun[0]]['location'] = "inventory"
+                print("Okay.\n")
+                continue
         else:
             print("I don't see that here.\n")
             continue
@@ -237,9 +248,12 @@ while game_over == False:
     if verb[0] in ['drop', 'place']:
         object_location = objects[noun[0]]['location']
         if object_location == "inventory":
-            objects[noun[0]]['location'] = location
-            print("You drop it.\n")
-            continue
+            if special_cases(verb, noun) == True:
+                continue
+            else:
+                objects[noun[0]]['location'] = location
+                print("You drop it.\n")
+                continue
         elif object_location == location:
             print("You're not holding it.\n")
             continue
@@ -281,6 +295,8 @@ while game_over == False:
                             print("You burn it.\n")
                             objects[noun[0]]['location'] = "oblivion"
                             continue
+                    else:
+                        print("That might work, but you don't have one of those.\n")
                 else:
                     print("Burn it with what?\n")
                     continue
