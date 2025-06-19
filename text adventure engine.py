@@ -66,6 +66,11 @@ objects = {
         'display name': "a gold lighter",
         'description': "It has the initials 'QPN' on it.",
         'location': "dead end"
+    },
+    'juicebox': {
+        'display name': 'a juicebox',
+        'description': "It's a raspberry juicebox.",
+        'location': "inventory"
     }
 }
 
@@ -88,6 +93,7 @@ def special_cases(verb, noun):
 
 
 edible_objects = ['schmoozle', 'rabbit']
+drinkable_objects = ['juicebox']
 flammable_objects = ['bat', 'cat']
 
 verbs = ['look', 'examine', 'get', 'take', 'drop', 'place', 'eat', 'drink', 'open', 'close', 'burn', 'break', 'twist', 'throw', 'attack', 'use', 'say', 'in']
@@ -281,6 +287,32 @@ while game_over == False:
         else:
             print("That's not here.\n")
         continue
+
+    # Handle the verb drink
+    if verb[0] == 'drink':
+        object_location = objects[noun[0]]['location']
+        if object_location == "inventory":
+            if noun[0] in drinkable_objects:
+                if special_cases(verb, noun) == True:
+                    continue
+                else:
+                    print("You drink it, and throw away the container.\n")
+                    objects[noun[0]]['location'] = "oblivion"
+                continue
+            else:
+                print("You can't drink that.\n")
+                continue
+        elif object_location == location:
+            print("I should probably pick it up first.\n")
+            continue
+        else:
+            print("That's not here.\n")
+        continue
+
+    # Handle the verb open
+
+
+    # Handle the verb close
 
     # Handle the verb burn
     if verb[0] == 'burn': # Is it the right verb?
