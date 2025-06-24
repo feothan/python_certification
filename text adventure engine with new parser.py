@@ -1,4 +1,5 @@
 import string
+import re
 
 is_first_time = True
 game_over = False
@@ -99,8 +100,24 @@ drinkable_objects = ['juicebox']
 flammable_objects = ['bat', 'cat']
 
 verb_list = ['take', 'drop', 'examine', 'open', 'close', 'read', 'go', 'climb', 'attack', 'eat', 'drink', 'throw', 'put', 'activate', 'deactivate', 'move', 'burn']
-synonyms = {'get': 'take', 'grab': 'take', 'pick up': 'take', 'into': 'inside', 'look at': 'examine', 'kill': 'attack', 'turn on': 'activate', 'turn off': 'deactivate'}
-preposition_list = ["at", "from", "under", "on", "to", "with", "inside", "in", "behind", "through"]
+synonyms = {'get': 'take', 'grab': 'take', 'pick up': 'take', 'in': 'inside', 'into': 'inside', 'look at': 'examine', 'kill': 'attack', 'turn on': 'activate', 'turn off': 'deactivate'}
+preposition_list = ["at", "from", "under", "on", "to", "with", "inside", "behind", "through"]
+
+def replace_synonyms(text):
+    # Sort keys by length (desc) to handle longer phrases first
+    sorted_keys = sorted(synonyms.keys(), key=len, reverse=True)
+
+    # Create a regex pattern to match all the synonym keys as full words/phrases
+    pattern = r'\b(?:' + '|'.join(re.escape(key) for key in sorted_keys) + r')\b'
+
+    def replacer(match):
+        matched_phrase = match.group(0)
+        return synonyms[matched_phrase]
+
+    # Replace using the regex pattern
+    result = re.sub(pattern, replacer, text)
+
+    return result
 
 # Parse user input for an action, a direct object, a preposition, and an indirect object
 # and return the information as a dictionary.
@@ -108,12 +125,8 @@ def parse_input(player_input):
     # Convert the input to lowercase
     lowercase_input = player_input.lower()
 
-    # Switch out all synonyms out for standard language
-    modified_input = lowercase_input
-    for key in sorted(synonyms.keys(), key=len, reverse=True):
-        modified_input = modified_input.replace(key, synonyms[key])
-    for key in synonyms:
-        modified_input = modified_input.replace(key, synonyms[key])
+    # Call function to replace synonyms
+    modified_input = replace_synonyms(lowercase_input)
 
     # Remove punctuation from user input
     cleaned_input = "".join(char for char in modified_input if char not in string.punctuation)
