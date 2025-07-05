@@ -95,8 +95,9 @@ objects = {
         'location': 'dead end',
         'weight': 1, # (pound)
         'volume': 10000, # (cubic inches)
-        'special': ['flammable', 'container'],
-        'capacity': 9500  # (cubic inches)
+        'special': ['flammable', 'container', 'openable'],
+        'capacity': 9500,  # (cubic inches)
+        'status': 'closed'
     },
     'table': {
         'display name': 'a stone table',
@@ -128,6 +129,11 @@ objects = {
     }
 }
 
+# This makes sure shelves and containers have a contents list.
+for obj_id, obj in objects.items():
+    if 'container' in obj.get('special', []) or 'shelf' in obj.get('special', []):
+        obj.setdefault('contents', [])
+
 verbs = {
     'take': {
         'conditions': ['must be in room'],
@@ -137,7 +143,7 @@ verbs = {
     },
     'drop': {
         'conditions': [],
-        'actions': ['moves direct object to room'],
+        'actions': ['place in container or on shelf', 'moves direct object to room'],
         'prepositions': ['on', 'inside', 'with'],
     },
     'examine': {
@@ -147,7 +153,7 @@ verbs = {
     },
     'open': {
         'conditions': ['must be in room or inventory'],
-        'actions': ['changes status of direct object to open'],
+        'actions': ['change status of direct object to open'],
         'prepositions': ['with']
     },
     'close': {
@@ -209,6 +215,11 @@ verbs = {
         'conditions': ['must be in room', 'must be moveable'],
         'actions': ['reveal direction via moveable'],
         'prepositions': ['with']
+    },
+    'put': {
+        'conditions': ['must be in inventory'],
+        'actions': ['place in container or on shelf'],
+        'prepositions': ['in', 'on', 'inside']
     }
 }
 
@@ -234,7 +245,21 @@ def special_case(action, direct_object, preposition, indirect_object):
         return True
     return False
 
-synonyms = {'get': 'take', 'grab': 'take', 'pick up': 'take', 'put': 'drop', 'place': 'drop', 'move': 'push', 'go': 'enter', 'in': 'inside', 'into': 'inside', 'look at': 'examine', 'kill': 'attack', 'turn on': 'activate', 'turn off': 'deactivate'}
+synonyms = {
+    'get': 'take',
+    'grab': 'take',
+    'pick up': 'take',
+    'place': 'drop',
+    'move': 'push',
+    'go': 'enter',
+    'in': 'inside',
+    'into': 'inside',
+    'on top of': 'on',
+    'look at': 'examine',
+    'kill': 'attack',
+    'turn on': 'activate',
+    'turn off': 'deactivate'}
+
 preposition_list = ['on', 'inside', 'with', 'at']
 
 def can_carry(object_id):
@@ -326,16 +351,27 @@ def look_at_the_room():
 
         print(f'Exits: {exits}')
 
-        # Show any objects that are in the room.
-        contents = " - ".join(
-            objects[item]["display name"] for item in objects if objects[item]["location"] == location
-        )
+        for item in objects:
+            if objects[item]["location"] == location:
+                print(f"You see: {objects[item]['display name']}")
 
-        # Display the contents
-        if contents:
-            print(f"You see: {contents}")
-        else:
-            print("The room is empty.")
+                if 'container' in objects[item].get('special', []) and objects[item].get('status') == 'open':
+                    for content in objects[item].get('contents', []):
+                        print(f"  Inside: {objects[content]['display name']}")
+                elif 'shelf' in objects[item].get('special', []):
+                    for content in objects[item].get('contents', []):
+                        print(f"  On top: {objects[content]['display name']}")
+
+        # # Show any objects that are in the room.
+        # contents = " - ".join(
+        #     objects[item]["display name"] for item in objects if objects[item]["location"] == location
+        # )
+        #
+        # # Display the contents
+        # if contents:
+        #     print(f"You see: {contents}")
+        # else:
+        #     print("The room is empty.")
 
 # This is the game loop.
 while not game_over:
@@ -368,13 +404,24 @@ while not game_over:
 
     # Check for inventory check (i, invent, inventory)
     if player_move in ["i", "invent", "inventory"]:
-        display_inventory = " - ".join(
-            objects[item]["display name"] for item in objects if objects[item]["location"] == "inventory"
-        )
-        if display_inventory:
-            print(f'You are carrying:\n{display_inventory}\n')
-        else:
+        found = False
+        print("You are carrying:")
+        for item in objects:
+            if objects[item]["location"] == "inventory":
+                found = True
+                print(f"- {objects[item]['display name']}")
+                # If it's a container and open, list what's inside
+                if 'container' in objects[item].get('special', []) and objects[item].get('status') == 'open':
+                    for content in objects[item].get('contents', []):
+                        print(f"    Inside: {objects[content]['display name']}")
+                # If it's a shelf, list what's on it
+                elif 'shelf' in objects[item].get('special', []):
+                    for content in objects[item].get('contents', []):
+                        print(f"    On top: {objects[content]['display name']}")
+        if not found:
             print("You're not carrying anything.\n")
+        else:
+            print()
         continue
 
     # Check for 'look' request
@@ -413,10 +460,24 @@ while not game_over:
         # Generate fail responses for when specific conditions are not met.
         failed = False
         for condition in conditions:
-            if condition == 'must be in room' and object_location != location:
-                print("I don't see that here.\n")
-                failed = True
-                break
+            if condition == 'must be in room':
+                if object_location == location:
+                    continue
+                # Check if it's in an open container or shelf in the room
+                found = False
+                for obj in objects.values():
+                    if (
+                            obj.get('location') == location
+                            and ('container' in obj.get('special', []) or 'shelf' in obj.get('special', []))
+                            and obj.get('status') == 'open'
+                            and direct_object in obj.get('contents', [])
+                    ):
+                        found = True
+                        break
+                if not found:
+                    print("I don't see that here.\n")
+                    failed = True
+                    break
             elif condition == 'must be in room or inventory' and object_location not in [location, 'inventory']:
                 print("I don't see that here.\n")
                 failed = True
@@ -481,11 +542,33 @@ while not game_over:
         # If the conditions are met, execute the associated standard actions!
         for act in actions:
             if act == 'moves direct object to inventory':
-                if object_location == 'inventory':
+                source = object_location
+
+                # Case: Taking from a container/shelf
+                if preposition in ['from', 'inside', 'on'] and indirect_object:
+                    if indirect_object in objects:
+                        container = objects[indirect_object]
+                        contents = container.get('contents', [])
+                        if direct_object in contents:
+                            if not can_carry(direct_object):
+                                continue
+                            contents.remove(direct_object)
+                            objects[direct_object]['location'] = 'inventory'
+                            pounds_carried += objects[direct_object].get('weight', 0)
+                            volume_carried += objects[direct_object].get('volume', 0)
+                            print(
+                                f"You take the {objects[direct_object]['display name']} {preposition} the {container['display name']}.\n")
+                        else:
+                            print("That isn't there.\n")
+                        continue
+
+                # Case: Already holding it
+                if source == 'inventory':
                     print(verb_data.get('already holding message', "You're already holding that."), "\n")
-                elif object_location == location:
+                # Case: In the room
+                elif source == location:
                     if not can_carry(direct_object):
-                        continue  # 🚫 Too heavy or bulky
+                        continue
                     objects[direct_object]['location'] = 'inventory'
                     pounds_carried += objects[direct_object].get('weight', 0)
                     volume_carried += objects[direct_object].get('volume', 0)
@@ -494,6 +577,7 @@ while not game_over:
                     print("I don't see that here.\n")
 
             elif act == 'moves direct object to room':
+                # Case: Regular drop into room
                 if object_location == 'inventory':
                     objects[direct_object]['location'] = location
                     pounds_carried -= objects[direct_object].get('weight', 0)
@@ -503,6 +587,7 @@ while not game_over:
                     print("You're not holding it.\n")
                 else:
                     print("I don't see that here.\n")
+
             elif act == 'destroy direct object':
                 objects[direct_object]['location'] = None
                 print(f"You {action} it.\n")
@@ -523,6 +608,11 @@ while not game_over:
                 ):
                     direction = obj['direction it reveals']
                     destination = obj['room it leads to']
+
+                    if direction in rooms[location]['exits']:
+                        print("You've already revealed the passageway.\n")
+                        continue
+
                     rooms[location]['exits'][direction] = destination
 
                     dir_full = {
@@ -559,6 +649,40 @@ while not game_over:
             elif action in ['open', 'close'] and 'openable' not in objects[direct_object].get('special', []):
                 print(f"You can't {action} that.\n")
                 failed = True
+                break
+            elif act == 'place in container or on shelf':
+                if not indirect_object:
+                    print("Where do you want to put it?\n")
+                    break
+
+                container = objects[indirect_object]
+                item = objects[direct_object]
+
+                # Check if open (if openable), container/shelf, same location
+                if container.get('location') != location:
+                    print("That isn't here.\n")
+                    break
+                if 'container' in container.get('special', []) and container.get('status') != 'open':
+                    print("It's closed.\n")
+                    break
+                if 'container' not in container.get('special', []) and 'shelf' not in container.get('special', []):
+                    print("You can't put things there.\n")
+                    break
+
+                # Check volume constraint
+                used = sum(objects[i]['volume'] for i in container.get('contents', []))
+                if used + item['volume'] > container['capacity']:
+                    print("There's no room.\n")
+                    break
+
+                # Move item into container
+                container.setdefault('contents', []).append(direct_object)
+                item['location'] = indirect_object
+                pounds_carried -= item.get('weight', 0)
+                volume_carried -= item.get('volume', 0)
+                print(f"You place the {item['display name']} {preposition} the {container['display name']}.\n")
+
+                # Success: stop further action execution
                 break
 
         continue
