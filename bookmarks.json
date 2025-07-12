@@ -1,0 +1,742 @@
+{
+  "Adventure 1": {
+    "cave": {
+      "you see two paths": {
+        "left": {
+          "you fall on stalactites and die": {}
+        },
+        "right": {
+          "you head down a rocky underground path": {
+            "you see an underground pool of water": {
+              "go in it to swim across": {
+                "you realize the water is too cold": {
+                  "you freeze to death": {}
+                }
+              },
+              "go around it": {
+                "you start to walk around the water": {
+                  "you see a rock wall blocking your path": {
+                    "go back to go around the other way": {
+                      "you walk around the other direction": {
+                        "you successfully make it around the pool": {
+                          "you are getting tired": {
+                            "it has been hours since you started out": {
+                              "you don't know what time it is": {
+                                "find a better spot": {
+                                  "you trip and die": {}
+                                },
+                                "sleep on the rock": {
+                                  "you sleep well": {
+                                    "you wake up in the middle of the night": {
+                                      "you are very cold": {
+                                        "go back to sleep": {
+                                          "you freeze to death": {}
+                                        },
+                                        "go on to try and find warmth": {
+                                          "you walk forward": {
+                                            "you start to see a yellow light": {
+                                              "go away from it": {},
+                                              "go toward it": {
+                                                "you see that it is a camp fire": {
+                                                  "there is no one nearby": {
+                                                    "you see a back pack": {
+                                                      "don't grab it": {
+                                                        "you rest by the fire": {
+                                                          "you die of starvation": {}
+                                                        }
+                                                      },
+                                                      "grab it": {
+                                                        "there is food and a knife": {
+                                                          "eat a little and save the rest": {
+                                                            "you eat a pancake": {
+                                                              "go onward": {
+                                                                "straight": {
+                                                                  "you trip and die": {}
+                                                                },
+                                                                "right": {
+                                                                  "you get impaled on a stalactite": {}
+                                                                },
+                                                                "left": {
+                                                                  "you fall in the water and drown": {}
+                                                                }
+                                                              },
+                                                              "sleep by the fire": {
+                                                                "you sleep well the rest of the night": {
+                                                                  "you wake to see a dark figure in the shadows": {
+                                                                    "they are watching you": {
+                                                                      "walk over to them": {
+                                                                        "they follow you": {
+                                                                          "go left": {
+                                                                            "you fall into a hole and die": {}
+                                                                          },
+                                                                          "go right": {
+                                                                            "the cave falls on you": {
+                                                                              "you die": {}
+                                                                            }
+                                                                          },
+                                                                          "go forward": {
+                                                                            "you walk forward": {
+                                                                              "you see a tunnel": {
+                                                                                "try to find another way around": {
+                                                                                  "there is no no way around": {
+                                                                                    "The cave collapses on you": {
+                                                                                      "You die": {}
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "go into the tunnel": {
+                                                                                  "you start to crawl into the tunnel": {
+                                                                                    "there are two passages in the tunnel": {
+                                                                                      "left": {
+                                                                                        "you go into the tunnel": {
+                                                                                          "you crawl for a while": {
+                                                                                            "it starts to get really dark": {
+                                                                                              "you can't see anything": {
+                                                                                                "you feel the tunnel tilting downward": {
+                                                                                                  "you bump into a wall of stones": {
+                                                                                                    "feel the surrounding walls": {
+                                                                                                      "left wall": {
+                                                                                                        "there is a button": {
+                                                                                                          "you press it": {
+                                                                                                            "lava flows into the tunnel": {
+                                                                                                              "you burn to death": {}
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      },
+                                                                                                      "right wall": {
+                                                                                                        "There is a lever": {
+                                                                                                          "you pull the lever": {
+                                                                                                            "the rocks in front of you fall away": {
+                                                                                                              "you continue into the tunnel": {
+                                                                                                                "the tunnel starts to get bigger": {
+                                                                                                                  "you can now stand": {
+                                                                                                                    "the tunnel splits": {
+                                                                                                                      "down": {
+                                                                                                                        "you climb down": {
+                                                                                                                          "you slip and fall deep underground": {
+                                                                                                                            "you fall into lava and die": {}
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      },
+                                                                                                                      "up": {
+                                                                                                                        "you climb up": {
+                                                                                                                          "you look up the tunnel": {
+                                                                                                                            "you see a dot, a far away light": {
+                                                                                                                              "you climb for many hours": {
+                                                                                                                                "you see a small mini cave": {
+                                                                                                                                  "keep climbing": {
+                                                                                                                                    "you are so tired": {
+                                                                                                                                      "you fall asleep and fall to your death": {}
+                                                                                                                                    }
+                                                                                                                                  },
+                                                                                                                                  "go in": {
+                                                                                                                                    "hang out": {
+                                                                                                                                      "you fall asleep anyway": {
+                                                                                                                                        "you hit your head on the wall and die": {}
+                                                                                                                                      }
+                                                                                                                                    },
+                                                                                                                                    "sleep": {
+                                                                                                                                      "you sleep well": {
+                                                                                                                                        "you wake up and continue to climb": {
+                                                                                                                                          "You get to a point where the walls are too smooth": {
+                                                                                                                                            "you can not continue upward": {
+                                                                                                                                              "give up": {
+                                                                                                                                                "you die": {}
+                                                                                                                                              },
+                                                                                                                                              "go into side tunnel": {
+                                                                                                                                                "the tunnel is dark and you can't see much": {
+                                                                                                                                                  "all you see is a glinting in the back": {
+                                                                                                                                                    "go deeper into the cava and ignore it": {
+                                                                                                                                                      "you come across a pirate who looks hungry": {
+                                                                                                                                                        "he asks for gold": {
+                                                                                                                                                          "you do not have any": {
+                                                                                                                                                            "he eats you": {
+                                                                                                                                                              "you die": {}
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    },
+                                                                                                                                                    "go investigate": {
+                                                                                                                                                      "it seems to be five gold coins": {
+                                                                                                                                                        "leave them": {
+                                                                                                                                                          "you go deeper into the tunnel": {
+                                                                                                                                                            "you get eaten by a pirate since you have no gold": {
+                                                                                                                                                              "you die": {}
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        "take them": {
+                                                                                                                                                          "you put them in your pocket": {
+                                                                                                                                                            "you go deeper into the cave": {
+                                                                                                                                                              "you meet a pirate": {
+                                                                                                                                                                "he asks if you have any gold": {
+                                                                                                                                                                  "say no": {
+                                                                                                                                                                    "he eats you": {
+                                                                                                                                                                      "you die": {}
+                                                                                                                                                                    }
+                                                                                                                                                                  },
+                                                                                                                                                                  "say yes": {
+                                                                                                                                                                    "he wants some": {
+                                                                                                                                                                      "give him five": {
+                                                                                                                                                                        "he thanks you": {
+                                                                                                                                                                          "you go further into the cave": {
+                                                                                                                                                                            "you find a dirt drill that needs four coins to activate": {
+                                                                                                                                                                              "you don't have any coins left": {
+                                                                                                                                                                                "you die of a heart attack": {}
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      },
+                                                                                                                                                                      "give him four": {
+                                                                                                                                                                        "he thanks you": {
+                                                                                                                                                                          "you go further into the cave": {
+                                                                                                                                                                            "you find a dirt drill that needs four coins to activate": {
+                                                                                                                                                                              "you only have one coin left": {
+                                                                                                                                                                                "you die of a heart attack": {}
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      },
+                                                                                                                                                                      "give him three": {
+                                                                                                                                                                        "he thanks you": {
+                                                                                                                                                                          "you go further into the cave": {
+                                                                                                                                                                            "you find a dirt drill that needs four coins to activate": {
+                                                                                                                                                                              "you only have two coins left": {
+                                                                                                                                                                                "you die of a heart attack": {}
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      },
+                                                                                                                                                                      "give him two": {
+                                                                                                                                                                        "he thanks you": {
+                                                                                                                                                                          "you go further into the cave": {
+                                                                                                                                                                            "you find a dirt drill that needs four coins to activate": {
+                                                                                                                                                                              "you only have three": {
+                                                                                                                                                                                "you die of a heart attack": {}
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      },
+                                                                                                                                                                      "give him one": {
+                                                                                                                                                                        "he thanks you and gives you a gold key": {
+                                                                                                                                                                          "he says to use it wisely": {
+                                                                                                                                                                            "you venture to the back of the cave": {
+                                                                                                                                                                              "you get in the dirt drill": {
+                                                                                                                                                                                "you put in the four coins": {
+                                                                                                                                                                                  "it turns on and starts drilling": {
+                                                                                                                                                                                    "go down": {
+                                                                                                                                                                                      "you fall into lava and die": {}
+                                                                                                                                                                                    },
+                                                                                                                                                                                    "go up": {
+                                                                                                                                                                                      "you head toward the surface": {
+                                                                                                                                                                                        "in about an hour you break through the dirt": {
+                                                                                                                                                                                          "it is sunrise and you are outside": {
+                                                                                                                                                                                            "you are next to a town but you are locked out": {
+                                                                                                                                                                                              "climb over": {
+                                                                                                                                                                                                "you get shocked to death": {}
+                                                                                                                                                                                              },
+                                                                                                                                                                                              "use key": {
+                                                                                                                                                                                                "you get in to the town": {
+                                                                                                                                                                                                  "your friends live here and take you in": {
+                                                                                                                                                                                                    "You live happily ever after": {}
+                                                                                                                                                                                                  }
+                                                                                                                                                                                                }
+                                                                                                                                                                                              }
+                                                                                                                                                                                            }
+                                                                                                                                                                                          }
+                                                                                                                                                                                        }
+                                                                                                                                                                                      }
+                                                                                                                                                                                    }
+                                                                                                                                                                                  }
+                                                                                                                                                                                }
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      }
+                                                                                                                                                                    }
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "try to take the wall apart": {
+                                                                                                      "you can't break it": {
+                                                                                                        "you starve to death in the tunnel": {}
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "right": {
+                                                                                        "you crawl into the tunnel": {
+                                                                                          "it starts to get smaller": {
+                                                                                            "you get stuck": {
+                                                                                              "you starve to death": {}
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "watch them": {
+                                                                        "they come over and kill you": {}
+                                                                      },
+                                                                      "stay there": {
+                                                                        "they watch you till you starve to death": {}
+                                                                      },
+                                                                      "start to run away": {
+                                                                        "they start to follow you": {
+                                                                          "they kill you": {}
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
+                                                          "dont eat the food": {
+                                                            "you starve to death in a few hours": {}
+                                                          },
+                                                          "eat food": {
+                                                            "you choke to death": {}
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "go in the water": {
+                      "you freeze to death": {}
+                    },
+                    "try to break it": {
+                      "you start to attack the wall": {
+                        "it breaks": {
+                          "the ceiling falls down on top of you": {
+                            "you are crushed to death": {}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "swamp": {
+      "go to the boat": {
+        "left": {
+          "you encounter an alligator": {
+            "you get eaten": {}
+          }
+        },
+        "right": {
+          "your boat gets caught on unseen roots": {
+            "you can not escape and die of starvation": {}
+          }
+        },
+        "forward": {
+          "you can't see what is ahead in the mist": {
+            "you start to see two swamp huts": {
+              "right hut": {
+                "there is an evil witch who eats you alive": {}
+              },
+              "left hut": {
+                "There is a witch who offers you potions of healing for a future favor": {
+                  "refuse": {
+                    "you continue forward": {
+                      "you meet an alligator": {
+                        "they bite off your arm": {
+                          "you can't heal yourself, so you bleed to death": {}
+                        }
+                      }
+                    }
+                  },
+                  "take the deal": {
+                    "you meet an alligator": {
+                      "your arm gets bitten off": {
+                        "you heal yourself and get your arm back": {
+                          "you continue forward": {
+                            "you see the shore": {
+                              "stay on the boat": {
+                                "your boat starts leaking": {
+                                  "you drown in the swamp": {}
+                                }
+                              },
+                              "leave the boat and go to land": {
+                                "you go on to land": {
+                                  "go left": {
+                                    "you get bitten by a poisonous snake": {
+                                      "you die": {}
+                                    }
+                                  },
+                                  "go right": {
+                                    "you walk for hours": {
+                                      "eventually it becomes dark": {
+                                        "stop and sleep": {
+                                          "you get bitten by a snake in your sleep": {
+                                            "you die": {}
+                                          }
+                                        },
+                                        "keep walking": {
+                                          "you hear creepy sounds in the dark": {
+                                            "you come across a hammock in a tree": {
+                                              "keep going": {
+                                                "you trip and die in the night": {}
+                                              },
+                                              "sleep in the hammock": {
+                                                "you have a good night's sleep": {
+                                                  "you wake up to see someone approaching": {
+                                                    "they have not seen you yet": {
+                                                      "run away": {
+                                                        "they see you and start chasing you": {
+                                                          "they kill you with a spear": {}
+                                                        }
+                                                      },
+                                                      "go talk to them like you weren't sleeping in their bed": {
+                                                        "you say who are you": {
+                                                          "they say\" I am your nightmares\"": {
+                                                            "and stab you to death": {
+                                                              "it turns out they lost their mind in the swamp": {}
+                                                            }
+                                                          }
+                                                        },
+                                                        "say hello": {
+                                                          "they say hi back": {
+                                                            "they won't say anything else": {
+                                                              "they start following you": {
+                                                                "accept them as your friend": {
+                                                                  "they give you a cake": {
+                                                                    "save it": {
+                                                                      "you put it in your backpack": {
+                                                                        "keep going": {
+                                                                          "you find a path": {
+                                                                            "stay away from it": {
+                                                                              "you get lost and die": {}
+                                                                            },
+                                                                            "go on the path": {
+                                                                              "you walk for a while": {
+                                                                                "you see the witch who gave you the potion": {
+                                                                                  "she says that she wants her favor": {
+                                                                                    "she says give me your friend or die!": {
+                                                                                      "try to defeat her": {
+                                                                                        "you and your friend fight the witch": {
+                                                                                          "you kill the witch": {
+                                                                                            "go off the path": {
+                                                                                              "you get lost and die": {}
+                                                                                            },
+                                                                                            "climb a tree": {
+                                                                                              "you climb up the tallest tree around": {
+                                                                                                "you see a city far off": {
+                                                                                                  "it is to your right": {
+                                                                                                    "jump into the water": {
+                                                                                                      "you drown": {}
+                                                                                                    },
+                                                                                                    "climb down from the tree": {
+                                                                                                      "you climb down safely": {
+                                                                                                        "you can start heading toward the city": {
+                                                                                                          "you are hungry": {
+                                                                                                            "ask you friend for more food": {
+                                                                                                              "they get annoyed and kill you": {}
+                                                                                                            },
+                                                                                                            "eat the cake that your friend gave you": {
+                                                                                                              "you eat the cake": {
+                                                                                                                "you start to walk to the city": {
+                                                                                                                  "in one hour your friend gives you": {
+                                                                                                                    "three waffles": {
+                                                                                                                      "you keep walking": {
+                                                                                                                        "you try to eat a waffle": {
+                                                                                                                          "it kills you": {
+                                                                                                                            "it was a test": {}
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    },
+                                                                                                                    "mystery bag": {
+                                                                                                                      "there is": {
+                                                                                                                        "a lot of food in it": {
+                                                                                                                          "you take this and keep walking": {
+                                                                                                                            "you walk for a few hours.": {
+                                                                                                                              "you are hungry": {
+                                                                                                                                "keep walking": {
+                                                                                                                                  "you starve to death": {}
+                                                                                                                                },
+                                                                                                                                "eat": {
+                                                                                                                                  "you pick a food from the mystery bag": {
+                                                                                                                                    "eat some strawberries": {
+                                                                                                                                      "try to build shelter before night": {
+                                                                                                                                        "you and your friend build some shelter": {
+                                                                                                                                          "it becomes night": {
+                                                                                                                                            "you sleep in the shelter": {
+                                                                                                                                              "you sleep well": {
+                                                                                                                                                "start walking early": {
+                                                                                                                                                  "you starve to death": {}
+                                                                                                                                                },
+                                                                                                                                                "eat breakfast": {
+                                                                                                                                                  "you eat some pancakes with your friend": {
+                                                                                                                                                    "you start to walk to the city": {
+                                                                                                                                                      "you come across some fruit trees": {
+                                                                                                                                                        "don't take fruit": {
+                                                                                                                                                          "you continue on to the city": {
+                                                                                                                                                            "you arrive at the city": {
+                                                                                                                                                              "YOU GOT": {
+                                                                                                                                                                "THE ESCAPED THE SWAMP ENDING!": {}
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        },
+                                                                                                                                                        "take some fruit": {
+                                                                                                                                                          "you pick some fruit and continue to the city": {
+                                                                                                                                                            "you arrive in the city": {
+                                                                                                                                                              "a farmer and the police come up to you": {
+                                                                                                                                                                "they take you to jail for theft": {
+                                                                                                                                                                  "the farmer saw you take the fruit": {
+                                                                                                                                                                    "it was his fruit": {
+                                                                                                                                                                      "you go to jail": {
+                                                                                                                                                                        "make enemies of the inmates": {
+                                                                                                                                                                          "they kill you for bothering them": {}
+                                                                                                                                                                        },
+                                                                                                                                                                        "make friends with the inmates": {
+                                                                                                                                                                          "you become friends": {
+                                                                                                                                                                            "you enjoy your life sentence": {
+                                                                                                                                                                              "YOU GOT": {
+                                                                                                                                                                                "THE HAPPY LIFE SENTENCE ENDING!": {}
+                                                                                                                                                                              }
+                                                                                                                                                                            }
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                                                                                                      }
+                                                                                                                                                                    }
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      },
+                                                                                                                                      "keep walking": {
+                                                                                                                                        "it becomes dark": {
+                                                                                                                                          "you start to hear wolves": {
+                                                                                                                                            "a wolf tries to bite you": {
+                                                                                                                                              "your friend saves you by sacrificing themself": {
+                                                                                                                                                "the wolf bites your friend": {
+                                                                                                                                                  "your friend dies": {
+                                                                                                                                                    "you are very sad": {
+                                                                                                                                                      "you die of sadness": {
+                                                                                                                                                        "YOU GOT": {
+                                                                                                                                                          "THE SAD ENDING!": {}
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    },
+                                                                                                                    "cake": {
+                                                                                                                      "you keep walking": {
+                                                                                                                        "you eat the cake": {
+                                                                                                                          "you barf it up and die": {
+                                                                                                                            "it was a test": {}
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "start to walk to the city": {
+                                                                                                              "you die of starvation in one hour": {}
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            },
+                                                                                            "continue on the path": {
+                                                                                              "you come to a ravine": {
+                                                                                                "go back": {
+                                                                                                  "you lose your way and die": {}
+                                                                                                },
+                                                                                                "go around": {
+                                                                                                  "you slip and fall in": {
+                                                                                                    "you fall into lava and die": {}
+                                                                                                  }
+                                                                                                },
+                                                                                                "go down into the ravine": {
+                                                                                                  "there is lava at the bottom": {
+                                                                                                    "burn to death": {}
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "sacrifice self": {
+                                                                                        "you die": {
+                                                                                          "YOU GOT THE": {
+                                                                                            "SACRIFICE ENDING!": {}
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "give friend": {
+                                                                                        "you break their trust": {
+                                                                                          "your friend kills you and the witch": {}
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "start building a house to live in the swamp": {
+                                                                          "you live with your friend for the rest of your life": {
+                                                                            "YOU GOT": {
+                                                                              "THE GOOD ENDING!": {}
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "eat it": {
+                                                                      "you starve six days later": {}
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "kill them": {
+                                                                  "they have better skills": {
+                                                                    "they kill you instead": {}
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "go back to bed": {
+                                                        "they kill you": {}
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "go forward": {
+                                    "you walk forward": {
+                                      "you step into the water, not seeing the shore": {
+                                        "you drown": {}
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "go into the mist": {
+        "you get bitten by a snake and die": {}
+      }
+    }
+  }
+}
