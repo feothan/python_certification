@@ -3,11 +3,9 @@ import re
 
 is_first_time = True
 game_over = False
-location = "cistern"
-maximum_pounds_can_carry = 100 # (pounds)
-pounds_carried = 0 # (pounds)
-maximum_volume_can_carry = 500 # (cubic inches)
-volume_carried = 0 # (cubic inches)
+location = "tunnel"
+most_you_can_carry = 9 # Tiny objects take up no space, small take up 1, medium take up 2, large take up 3, huge items cannot be picked up.
+amount_carried = 0
 
 # Initiate game data.
 rooms = {
@@ -36,114 +34,145 @@ rooms = {
         'exits': {
             'w': "clearing"
         }
+    },
+    "on a cliff": {
+        'description': "You're standing on a cliff, looking at a dilapidated building you suspect was a library.",
+        'exits': {
+            'e': "library",
+            'w': "dead end"
+        }
+    },
+    "library": {
+        'description': "You are in a ruined library. The pictures are shredded, but the shelves look untouched, and emanate menace. A spiral staircase is in the center of the room.",
+        'exits': {
+            'w': "on a cliff",
+            'u': "top floor"
+        }
+    },
+    "top floor": {
+        'description': "You are at the top of the spiral staircase. The library, here, is destroyed and open to the sky.",
+        'exits': {
+            'd': "library",
+            'e': "meeting room"
+        }
+    },
+    "meeting room": {
+        'description': "This is where meetings were held in the library--fifty years ago, a hundred? You can't tell. There's a balcony to the east.",
+        'exits': {
+            'w': "top floor",
+            'n': "balcony"
+        }
+    },
+    "balcony": {
+        'description': "You expect to see the expanse of the ruined city, but you see only very tall, very old trees. Could you have gotten turned around in the old library?",
+        'exits': {
+            's': "meeting room"
+        }
+    },
+    "cozy cave": {
+        'description': "This is a cozy little cave. It has all the amenities, but you feel like it would be a crime to touch anything.",
+        'exits': {
+            'e': "tunnel"
+        }
     }
-
 }
+
+sizes = ['tiny', 'small', 'medium', 'large', 'huge']
 
 objects = {
     'bat': {
         'display name': "a baseball bat",
         'description': "It's a Louisville Slugger.",
-        'location': 'tunnel',
-        'weight': 2, # (pounds)
-        'volume': 218, # (cubic inches)
+        'location': 'cozy cave',
+        'size': 'medium',
         'special': ['flammable']
     },
     'cat': {
         'display name': "a small cat",
         'description': "It's a long-haired black cat named Harold Jr.",
         'location': 'cistern',
-        'weight': 9, # (pounds)
-        'volume': 244, # (cubic inches)
+        'size': 'medium',
         'special': ['flammable', 'alive']
     },
     'schmoozle': {
         'display name': "the schmoozle",
         'description': "It's everything you expect it to be.",
         'location': 'clearing',
-        'weight': 13, # (pounds)
-        'volume': 113, # (cubic inches)
+        'size': 'large',
         'special': ['edible', 'alive']
     },
     'rabbit': {
         'display name': "the rabbit",
         'description': "This is the rabbit of your dreams.",
-        'location': 'cistern',
-        'weight': 5, # (pounds)
-        'volume': 153, # (cubic inches)
+        'location': 'meeting room',
+        'size': 'medium',
         'special': ['edible', 'flammable', 'alive']
     },
     'lighter': {
         'display name': "a gold lighter",
         'description': "It has the initials 'QPN' on it.",
         'location': 'dead end',
-        'weight': 2, # (pounds)
-        'volume': 2, # (cubic inches)
-        'special': ['combustible']
+        'size': 'small',
+        'special': ['igniter']
     },
     'juicebox': {
         'display name': 'a juicebox',
         'description': "It's a raspberry juicebox.",
-        'location': 'inventory',
-        'weight': 1, # (pound)
-        'volume': 10, # (cubic inches)
+        'location': 'balcony',
+        'size': 'small',
         'special': ['potable']
     },
     'box': {
         'display name': 'a cardboard box',
         'description': "It's a medium-sized box.",
-        'location': 'dead end',
-        'weight': 1, # (pound)
-        'volume': 10000, # (cubic inches)
-        'special': ['flammable', 'container', 'openable'],
-        'capacity': 9500,  # (cubic inches)
+        'location': 'library',
+        'size': 'medium',
+        'special': ['container'],
         'status': 'closed'
+    },
+    'paper': {
+        'display name': 'a slip of paper',
+        'description': "It's paper, with writing on it.",
+        'location': 'on a cliff',
+        'size': 'tiny',
+        'special': ['flammable'],
     },
     'table': {
         'display name': 'a stone table',
         'description': "It would look harmless enough, if not for the blood stains.",
         'location': 'clearing',
-        'weight': 1000, # (pounds)
-        'volume': 20000, # (cubic inches)
+        'size': 'huge',
         'special': ['shelf'],
-        'capacity': 4000 # (cubic inches)
     },
     'rock': {
         'display name': 'the big rock',
         'description': "It's a big rock against a stone wall.",
         'location': 'tunnel',
-        'weight': 1000, # (pounds)
-        'volume': 20000, # (cubic inches)
-        'special': ['door', 'moveable'],
+        'size': 'huge',
+        'special': ['moveable'],
         'direction it reveals': 'w',
-        'room it leads to': 'dead end'
+        'room it leads to': 'cozy cave'
     },
     'ladder': {
-        'display name': 'a ladder',
-        'description': "It's a ladder bolted to a cliff face.",
-        'location': 'cistern',
-        'weight': 1000,
-        'volume': 20000,
+        'display name': 'a rope ladder',
+        'description': "It's a dangling ladder in the crevice.",
+        'location': 'dead end',
+        'size': 'huge',
         'special': ['climbable'],
-        'room it leads to': 'clearing'
+        'room it leads to': 'on a cliff'
+
     }
 }
-
-# This makes sure shelves and containers have a contents list.
-for obj_id, obj in objects.items():
-    if 'container' in obj.get('special', []) or 'shelf' in obj.get('special', []):
-        obj.setdefault('contents', [])
 
 verbs = {
     'take': {
         'conditions': ['must be in room'],
         'actions': ['moves direct object to inventory'],
         'prepositions': ['on', 'inside', 'with'],
-        'already holding message': "You're already holding that."
     },
     'drop': {
-        'conditions': [],
-        'actions': ['place in container or on shelf', 'moves direct object to room'],
+        'conditions': ['must be in inventory'],
+        'actions': ['moves direct object to room'],
         'prepositions': ['on', 'inside', 'with'],
     },
     'examine': {
@@ -225,10 +254,13 @@ verbs = {
 
 # This is where puzzle logic and a lot of the fun goes. :)
 # Game authors, please note that the parser will simplify input so it matches the cases below.
+
+# But first, we put the action, direct object, preposition, and indirect object into one neat package.
 def special_case(action, direct_object, preposition, indirect_object):
     components = [var for var in [action, direct_object, preposition, indirect_object] if var is not None]
     player_input = " ".join(components)
     # print(player_input) -- This line lets you check for the distilled form, when you want that!
+
     if player_input == 'eat schmoozle':
         print("Once it makes eye contact with you, you're lost. You can't go through with it!\n")
         return True
@@ -245,6 +277,7 @@ def special_case(action, direct_object, preposition, indirect_object):
         return True
     return False
 
+# Each occurence of a synonym is switched out of the raw input text in favor of described verbs.
 synonyms = {
     'get': 'take',
     'grab': 'take',
@@ -260,24 +293,18 @@ synonyms = {
     'turn on': 'activate',
     'turn off': 'deactivate'}
 
+# These words will be dropped into the "preposition" slot when detected.
 preposition_list = ['on', 'inside', 'with', 'at']
 
-def can_carry(object_id):
-    global pounds_carried, volume_carried
+def can_carry(object_id): # Function receives an object name & immediately creates a subdictionary of its stats.
+    object_in_question = objects[object_id]
+    size = object_in_question.get('size', "") # Gets size
+    what_it_weighs = sizes.index(size)
 
-    obj = objects[object_id]
-    weight = obj.get('weight', 0)
-    volume = obj.get('volume', 0)
-
-    if pounds_carried + weight > maximum_pounds_can_carry:
-        print("That's too heavy to carry.\n")
-        return False
-    if volume_carried + volume > maximum_volume_can_carry:
-        print("You don't have room for that.\n")
+    if amount_carried + what_it_weighs > most_you_can_carry:
         return False
 
     return True
-
 
 def replace_synonyms(text):
     # Sort keys by length (desc) to handle longer phrases first
@@ -351,27 +378,16 @@ def look_at_the_room():
 
         print(f'Exits: {exits}')
 
-        for item in objects:
-            if objects[item]["location"] == location:
-                print(f"You see: {objects[item]['display name']}")
+        # Show any objects that are in the room.
+        contents = " - ".join(
+            objects[item]["display name"] for item in objects if objects[item]["location"] == location
+        )
 
-                if 'container' in objects[item].get('special', []) and objects[item].get('status') == 'open':
-                    for content in objects[item].get('contents', []):
-                        print(f"  Inside: {objects[content]['display name']}")
-                elif 'shelf' in objects[item].get('special', []):
-                    for content in objects[item].get('contents', []):
-                        print(f"  On top: {objects[content]['display name']}")
-
-        # # Show any objects that are in the room.
-        # contents = " - ".join(
-        #     objects[item]["display name"] for item in objects if objects[item]["location"] == location
-        # )
-        #
-        # # Display the contents
-        # if contents:
-        #     print(f"You see: {contents}")
-        # else:
-        #     print("The room is empty.")
+        # Display the contents
+        if contents:
+            print(f"You see: {contents}")
+        else:
+            print("The room is empty.\n")
 
 # This is the game loop.
 while not game_over:
@@ -404,24 +420,13 @@ while not game_over:
 
     # Check for inventory check (i, invent, inventory)
     if player_move in ["i", "invent", "inventory"]:
-        found = False
-        print("You are carrying:")
-        for item in objects:
-            if objects[item]["location"] == "inventory":
-                found = True
-                print(f"- {objects[item]['display name']}")
-                # If it's a container and open, list what's inside
-                if 'container' in objects[item].get('special', []) and objects[item].get('status') == 'open':
-                    for content in objects[item].get('contents', []):
-                        print(f"    Inside: {objects[content]['display name']}")
-                # If it's a shelf, list what's on it
-                elif 'shelf' in objects[item].get('special', []):
-                    for content in objects[item].get('contents', []):
-                        print(f"    On top: {objects[content]['display name']}")
-        if not found:
-            print("You're not carrying anything.\n")
+        display_inventory = " - ".join(
+            objects[item]["display name"] for item in objects if objects[item]["location"] == "inventory"
+        )
+        if display_inventory:
+            print(f'You are carrying:\n{display_inventory}\n')
         else:
-            print()
+            print("You're not carrying anything.\n")
         continue
 
     # Check for 'look' request
@@ -461,27 +466,28 @@ while not game_over:
         failed = False
         for condition in conditions:
             if condition == 'must be in room':
-                if object_location == location:
-                    continue
-                # Check if it's in an open container or shelf in the room
-                found = False
-                for obj in objects.values():
-                    if (
-                            obj.get('location') == location
-                            and ('container' in obj.get('special', []) or 'shelf' in obj.get('special', []))
-                            and obj.get('status') == 'open'
-                            and direct_object in obj.get('contents', [])
-                    ):
-                        found = True
-                        break
-                if not found:
+                if objects[direct_object]['location'] == 'inventory':
+                    print("You're already holding that.\n")
+                    failed = True
+                    break
+                elif not objects[direct_object]['location'] == location:
                     print("I don't see that here.\n")
                     failed = True
                     break
-            elif condition == 'must be in room or inventory' and object_location not in [location, 'inventory']:
-                print("I don't see that here.\n")
+
+            elif condition == 'must be in inventory' and not (
+                    objects[direct_object]['location'] == 'inventory'
+            ):
+                print("I'm not carrying that.\n")
                 failed = True
                 break
+
+            elif condition == 'must be in room or inventory':
+                if objects[direct_object]['location'] != 'inventory' and objects[direct_object]['location'] != location:
+                    print("I don't that here.\n")
+                    failed = True
+                    break
+
             elif condition == 'must be edible' and 'edible' not in objects[direct_object].get('special', []):
                 print("That's not edible.\n")
                 failed = True
@@ -527,7 +533,7 @@ while not game_over:
                     print("You're not holding that.\n")
                     failed = True
                     break
-                if 'combustible' not in objects[indirect_object].get('special', []):
+                if 'igniter' not in objects[indirect_object].get('special', []):
                     print("That won't help you start a fire.\n")
                     failed = True
                     break
@@ -542,46 +548,27 @@ while not game_over:
         # If the conditions are met, execute the associated standard actions!
         for act in actions:
             if act == 'moves direct object to inventory':
-                source = object_location
-
-                # Case: Taking from a container/shelf
-                if preposition in ['from', 'inside', 'on'] and indirect_object:
-                    if indirect_object in objects:
-                        container = objects[indirect_object]
-                        contents = container.get('contents', [])
-                        if direct_object in contents:
-                            if not can_carry(direct_object):
-                                continue
-                            contents.remove(direct_object)
+                if object_location == location:
+                    size = objects[direct_object].get('size', "")
+                    what_it_weighs = sizes.index(size)
+                    if size != 'huge':
+                        if can_carry(direct_object):
                             objects[direct_object]['location'] = 'inventory'
-                            pounds_carried += objects[direct_object].get('weight', 0)
-                            volume_carried += objects[direct_object].get('volume', 0)
-                            print(
-                                f"You take the {objects[direct_object]['display name']} {preposition} the {container['display name']}.\n")
+                            amount_carried += what_it_weighs
+                            print(amount_carried, "\n")
+                            print("Okay.\n")
                         else:
-                            print("That isn't there.\n")
-                        continue
-
-                # Case: Already holding it
-                if source == 'inventory':
-                    print(verb_data.get('already holding message', "You're already holding that."), "\n")
-                # Case: In the room
-                elif source == location:
-                    if not can_carry(direct_object):
-                        continue
-                    objects[direct_object]['location'] = 'inventory'
-                    pounds_carried += objects[direct_object].get('weight', 0)
-                    volume_carried += objects[direct_object].get('volume', 0)
-                    print("Okay.\n")
-                else:
-                    print("I don't see that here.\n")
+                            print("I'm carrying too much.\n")
+                    else:
+                        print("That's too heavy!\n")
 
             elif act == 'moves direct object to room':
-                # Case: Regular drop into room
                 if object_location == 'inventory':
                     objects[direct_object]['location'] = location
-                    pounds_carried -= objects[direct_object].get('weight', 0)
-                    volume_carried -= objects[direct_object].get('volume', 0)
+                    size = objects[direct_object].get('size', "")
+                    what_it_weighs = sizes.index(size)
+                    amount_carried -= what_it_weighs
+                    print(amount_carried, "\n")
                     print("You drop it.\n")
                 elif object_location == location:
                     print("You're not holding it.\n")
@@ -592,7 +579,7 @@ while not game_over:
                 objects[direct_object]['location'] = None
                 print(f"You {action} it.\n")
             elif act == 'enhance player':
-                pass  # Implement any health/score/etc. logic here
+                print("Player enhanced!\n")
             elif act == 'change status of direct object to on':
                 objects[direct_object]['status'] = 'on'
                 print("Activated.\n")
