@@ -57,7 +57,7 @@ rooms = {
         }
     },
     "meeting room": {
-        'description': "This is where meetings were held in the library--fifty years ago, a hundred? You can't tell. There's a balcony to the east.",
+        'description': "This is where meetings were held in the library--fifty years ago, a hundred? You can't tell. There's a balcony to the north.",
         'exits': {
             'w': "top floor",
             'n': "balcony"
@@ -128,7 +128,7 @@ objects = {
         'description': "It's a medium-sized box.",
         'location': 'library',
         'size': 'medium',
-        'special': ['container'],
+        'special': ['container', 'opens and closes'],
         'status': 'closed'
     },
     'paper': {
@@ -183,12 +183,12 @@ verbs = {
         'prepositions': ['with']
     },
     'open': {
-        'conditions': ['must be in room or inventory'],
+        'conditions': ['must be in room or inventory', 'must open and close'],
         'actions': ['change status of direct object to open'],
         'prepositions': ['with']
     },
     'close': {
-        'conditions': ['must be in room or inventory'],
+        'conditions': ['must be in room or inventory', 'must open and close'],
         'actions': ['change status of direct object to closed'],
         'prepositions': ['with']
     },
@@ -294,6 +294,7 @@ synonyms = {
     'into': 'inside',
     'on top of': 'on',
     'look at': 'examine',
+    'look': 'examine',
     'kill': 'attack',
     'turn on': 'activate',
     'turn off': 'deactivate'}
@@ -430,7 +431,13 @@ while not game_over:
         game_over = True
         continue
 
-    # Check for simple direction (n, s, e, w, u, d)
+    # Check for directional input (n, s, e, w, u, d - plus)
+    if player_move in ["go north", "go south", "go east", "go west", "go up", "go down"]:
+        player_move = player_move[3]
+
+    if player_move in ["north", "south", "east", "west", "up", "down"]:
+        player_move = player_move[0]
+
     if len(player_move) == 1 and player_move in rooms[location]['exits']:
         location = rooms[location]['exits'][player_move]
         is_first_time = True
@@ -466,6 +473,14 @@ while not game_over:
         print("Okay, I dropped everything!\n")
         continue
 
+    #Check for 'show verbs' request
+    if player_move in ["show verbs", "verbs", "list verbs"]:
+        display_verbs = " - ".join(verb for verb in verbs)
+        print(f"Available verbs are:\n{display_verbs}\n")
+        display_synonyms = " - ".join(synonym for synonym in synonyms)
+        print(f"Plus these synonyms:\n{display_synonyms}\n")
+        continue
+
     # Check for blank player_moves and weird attempts at direction.
     if player_move == "" or len(player_move) < 3:
         print("?\n")
@@ -474,7 +489,7 @@ while not game_over:
     # Call the function to parse for verbs and nouns, check to make sure you get at least one of each and handle cases.
     action, direct_object, preposition, indirect_object = parse_input(player_move)
     if direct_object and not action:
-        if objects[direct_object]['location'] in ['inventory', 'location']:
+        if objects[direct_object]['location'] in ['inventory', location]:
             print(f"What do you want me to do to {objects[direct_object]['display name']}?\n")
             continue
         else:
@@ -482,6 +497,9 @@ while not game_over:
             continue
     if action and not direct_object:
         print(f"What do you want me to {action}?\n")
+        continue
+    if not action and not direct_object:
+        print("I don't understand.\n")
         continue
 
     # Process standard responses to verb-direct_object/verb-direct_object-preposition-noun combos.
@@ -558,6 +576,11 @@ while not game_over:
 
             elif condition == 'must be a door' and 'door' not in objects[direct_object].get('special', []):
                 print("That's not something you can enter.\n")
+                failed = True
+                break
+
+            elif condition == 'must open and close' and 'opens and closes' not in objects[direct_object].get('special', []):
+                print("You can't do that with this.\n")
                 failed = True
                 break
 
@@ -684,7 +707,13 @@ while not game_over:
                 print("You change it.\n")
 
             elif act == 'examine object':
-                print(objects[direct_object].get('description', "You see nothing special.") + "\n")
+                print(objects[direct_object].get('description', "You see nothing special."))
+                if objects[direct_object].get('status') == 'open':
+                    print("It's open.\n")
+                elif objects[direct_object].get('status') == 'closed':
+                    print("It's closed.\n")
+                else:
+                    print()
 
             elif act == 'display message':
                 print(objects[direct_object].get('message', "It says something, but I can't make it out.") + "\n")
