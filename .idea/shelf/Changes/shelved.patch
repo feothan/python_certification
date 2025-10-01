@@ -1,0 +1,111 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"NEW cyoa engine\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"original mini chess &amp; text adventure engine files\" />\r\n      <option name=\"ENV_FILES\" value=\"\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/Choose Your Own Adventure Engine (first)\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/Choose Your Own Adventure Engine (first)/NEW cyoa engine.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.NEW cyoa engine\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ba836a4e19447ad020c23af6d014bdb5e6d0b637)
++++ b/.idea/workspace.xml	(date 1759290364424)
+@@ -1,5 +1,45 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="edc6f281-b008-4de8-9736-30a61519e014" name="Changes" comment="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio." />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN",
++    "assignee": "feothan"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/feothan/python_certification",
++    "accountId": "b0dd4980-f7f8-467e-8035-89bae97bccbe"
++  }
++}]]></component>
++  <component name="ProjectColorInfo"><![CDATA[{
++  "customColor": "",
++  "associatedIndex": 6
++}]]></component>
++  <component name="ProjectId" id="33Rq5ylPtJ5BEyJu13SINf0CzX6" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "Python.NEW cyoa engine.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "git-widget-placeholder": "main"
++  }
++}]]></component>
+   <component name="RunManager">
+     <configuration name="NEW cyoa engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="original mini chess &amp; text adventure engine files" />
+@@ -29,4 +69,53 @@
+       </list>
+     </recent_temporary>
+   </component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="edc6f281-b008-4de8-9736-30a61519e014" name="Changes" comment="" />
++      <created>1759290054091</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1759290054091</updated>
++    </task>
++    <task id="LOCAL-00001" summary="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio.">
++      <option name="closed" value="true" />
++      <created>1759290218961</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1759290218961</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio.">
++      <option name="closed" value="true" />
++      <created>1759290233000</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1759290233000</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
++    <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio." />
++    <option name="LAST_COMMIT_MESSAGE" value="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio." />
++  </component>
+ </project>
+\ No newline at end of file

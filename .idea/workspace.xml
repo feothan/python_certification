@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="NEW cyoa engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
@@ -28,5 +47,8 @@
         <item itemvalue="Python.NEW cyoa engine" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
   </component>
 </project>
