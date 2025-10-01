@@ -13,13 +13,13 @@ WIDTH = 800
 HEIGHT = 800
 SIZE = (WIDTH, HEIGHT)
 
-ONE = pygame.image.load('images/one.png')
-TWO = pygame.image.load('images/two.png')
-THREE = pygame.image.load('images/three.png')
-FOUR = pygame.image.load('images/four.png')
-SLIVER = pygame.image.load('images/sliver.png')
-CRESCENT = pygame.image.load('images/crescent.png')
-FULL = pygame.image.load('images/full.png')
+ONE = pygame.image.load('../images/one.png')
+TWO = pygame.image.load('../images/two.png')
+THREE = pygame.image.load('../images/three.png')
+FOUR = pygame.image.load('../images/four.png')
+SLIVER = pygame.image.load('../images/sliver.png')
+CRESCENT = pygame.image.load('../images/crescent.png')
+FULL = pygame.image.load('../images/full.png')
 
 def mark(row, col, player):
     board[row][col] = player

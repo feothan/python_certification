@@ -35,7 +35,17 @@
                                         "go on to try and find warmth": {
                                           "you walk forward": {
                                             "you start to see a yellow light": {
-                                              "go away from it": {},
+                                              "go away from it": {
+                                                "you venture further and further into the darkness": {
+                                                  "you can barely see anything": {
+                                                    "you start to feel tiny legs crawling all over you": {
+                                                      "you realize there are thousands of spiders crawling all over you": {
+                                                        "you get eaten alive by spiders": {}
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
                                               "go toward it": {
                                                 "you see that it is a camp fire": {
                                                   "there is no one nearby": {

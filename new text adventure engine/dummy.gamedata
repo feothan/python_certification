@@ -1,0 +1,264 @@
+begin in: tunnel
+carrying capacity: 9
+
+room: cistern
+description: The walls are dark with damp and you're having trouble keeping your balance in the rubble.
+n: tunnel
+s: clearing
+
+room: tunnel
+description: Unholy vinework crisscrosses the tunnel, the color of solitary rot.
+s: cistern
+
+room: clearing
+description: There's a tunnel's mouth leading away from this clearing, and a spot the size of an elephant where the grass is mashed down.
+n: cistern
+e: dead end
+
+room: dead end
+description: There's no way out but back, and the squeeze was tight getting here. There's purple ooze on the wall.
+w: clearing
+
+room: on a cliff
+description: You're standing on a cliff, looking at a dilapidated building you suspect was a library.
+e: library
+w: dead end
+
+room: library
+description: You are in a ruined library. The pictures are shredded, but the shelves look untouched, and emanate menace. A spiral staircase is in the center of the room.
+w: on a cliff
+u: top floor
+
+room: top floor
+description: You are at the top of the spiral staircase. The library, here, is destroyed and open to the sky.
+d: library
+e: meeting room
+
+room: meeting room
+description: This is where meetings were held in the library—fifty years ago, a hundred? You cant tell. There's a balcony to the east.
+w: top floor
+n: balcony
+
+room: balcony
+description: You expect to see the expanse of the ruined city, but you see only very tall, very old trees. Could you have gotten turned around in the old library?
+s: meeting room
+
+room: cozy cave
+description: This is a cozy little cave. It has all the amenities, but you feel like it would be a crime to touch anything.
+e: tunnel
+
+object: bat
+display name: a baseball bat
+description: It's a Louisville Slugger.
+location: cozy cave
+size: medium
+special: flammable
+
+object: cat
+display name: a small cat
+description: It's a long-haired black cat named Harold Jr.
+location: cistern
+size: medium
+special: flammable, alive
+
+object: schmoozle
+display name: the schmoozle
+description: It's everything you expect it to be.
+location: clearing
+size: large
+special: edible, alive
+
+object: rabbit
+display name: the rabbit
+description: This is the rabbit of your dreams.
+location: meeting room
+size: medium
+special: edible, flammable, alive
+
+object: lighter
+display name: a gold lighter
+description: It has the initials QPN on it.
+location: dead end
+size: small
+special: igniter
+
+object: juicebox
+display name: a juicebox
+description: Its a raspberry juicebox. It has nutritional information on it.
+message: It says 'Practically guarantees immortality!' on the back.
+location: balcony
+size: small
+special: potable, readable
+
+object: box
+display name: a cardboard box
+description: It's a medium-sized box.
+location: library
+size: medium
+special: container
+status: closed
+
+object: paper
+display name: a slip of paper
+description: It's paper, with writing on it.
+message: It's a receipt for 7 dollars worth of cheese.
+location: on a cliff
+size: tiny
+special: flammable, readable
+
+object: table
+display name: a stone table
+description: It would look harmless enough, if not for the blood stains.
+location: clearing
+size: huge
+special: shelf
+
+object: rock
+display name: the big rock,
+description: It's a big rock against a stone wall. The ground is uneven and you might be able to move it a little.,
+location: tunnel
+size: huge
+special: moveable
+direction it reveals: w
+room it leads to: cozy cave
+
+object: ladder
+display name: a rope ladder
+description: It's a dangling ladder in the crevice.
+location: dead end
+size: huge
+special: climbable
+room it leads to: on a cliff
+
+
+verb: take
+conditions: must be in room
+actions: move direct object to inventory
+prepositions: on, inside, with
+
+verb: drop
+conditions: must be in inventory
+actions: move direct object to room
+prepositions: on, inside, with
+
+verb: examine
+conditions: must be in room or inventory
+actions: examine object
+prepositions: with
+
+verb: open
+conditions: must be in room or inventory
+actions: change status of direct object to open
+prepositions: with
+
+verb: close
+conditions: must be in room or inventory
+actions: change status of direct object to closed
+prepositions: with
+
+verb: read
+conditions: must be in room or inventory, must be readable
+actions: display message
+prepositions: with
+
+verb: enter
+conditions: must be in room, must be a door, must be open
+actions: move player to specified room
+prepositions:
+
+verb: climb
+conditions: must be in room, must be climbable
+actions: move player to specified room
+prepositions: with
+
+verb: attack
+conditions: must be in room, must be alive
+actions: begin fight sequence
+prepositions: with
+
+verb: eat
+conditions: must be edible
+actions: destroy direct object, enhance player
+prepositions: with
+
+verb: drink
+conditions: must be potable
+actions: destroy direct object, enhance player
+prepositions: with
+
+verb: throw
+conditions:
+actions: move direct object to room
+prepositions: at
+
+verb: activate
+conditions: must be in room or inventory
+actions: change status of direct object to on
+prepositions: with
+
+verb: deactivate
+conditions: must be in room or inventory
+actions: change status of direct object to off
+prepositions: with
+
+verb: burn
+conditions: must be flammable
+actions: change object
+prepositions: with
+
+verb: push
+conditions: must be in room, must be moveable
+actions: reveal direction via moveable
+prepositions: with
+
+verb: combine
+conditions: must be in inventory, indirect object must be in inventory
+actions:
+prepositions: with
+
+
+
+# This is where puzzle logic and a lot of the fun goes. :)
+# Game authors, please note that the parser will simplify input so it matches the cases below.
+
+# But first, we put the action, direct object, preposition, and indirect object into one neat package.
+def special_case(action, direct_object, preposition, indirect_object):
+components = var for var in action, direct_object, preposition, indirect_object if var is not None
+player_input =  .join(components)
+# print(player_input) -- This line lets you check for the distilled form, when you want that!
+
+if player_input == eat schmoozle:
+print(Once it makes eye contact with you, youre lost. You cant go through with it!\n)
+return True
+if player_input == burn bat with lighter:
+print(It goes up in a lot of smoke!\n)
+objectsdirect_objectdisplay name = a crispy bat
+objectsdirect_objectweight = 1
+change_amount_carried(-1)
+objectsdirect_objectdescription = Its a shadow of its former self.
+return True
+if player_input == drop cat:
+print(The poor cat, having escaped your grasp, runs as far away as it can get.\n)
+objectsdirect_objectdisplay name = a spooked cat
+move_object_and_manage_weight(direct_object, to room)
+objectsdirect_objectlocation = dead end
+return True
+return False
+
+# Each occurence of a synonym is switched out of the raw input text in favor of described verbs.
+synonyms =
+get: take
+grab: take
+pick up: take
+place: drop
+put: drop
+move: push
+go: enter
+in: inside
+into: inside
+on top of: on
+look at: examine
+kill: attack
+turn on: activate
+turn off: deactivate
+
