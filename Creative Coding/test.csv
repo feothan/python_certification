@@ -1,0 +1,2 @@
+filepath,total words,word count removing stopwords,line count,most common word
+files_for_testing/tinyfile_4.txt,10,4,1,i
