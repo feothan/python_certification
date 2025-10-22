@@ -1,0 +1,691 @@
+TITLE, HOURS PLAYED, PERCENTAGE ACHIEVEMENTS, DATE LAST PLAYED
+Left 4 Dead 2, 12.0, 0.0%, 2016-01-17
+Counter-Strike 2, 13.8, 0.0%, 2016-01-17
+The Ship, 5.6, N/A, 2015-07-02
+Plants vs. Zombies: Game of the Year, 329.1, 57.1%, 2016-08-09
+Psychonauts, 221.5, 67.6%, 2020-08-23
+X-Blades, 9.7, N/A, 2015-08-04
+Stubbs the Zombie in Rebel Without a Pulse, 36.0, 22.9%, 2024-02-08
+BioShock Infinite, 10.2, 0.0%, 2016-02-01
+Oddworld: Munch's Oddysee, 20.4, 0.0%, 2016-07-31
+Luxor 3, 12.3, N/A, 2020-08-01
+Dragon Age: Origins, 6.2, N/A, 2021-01-08
+On the Rain-Slick Precipice of Darkness: Episode One, 26.4, 83.3%, 2015-03-06
+On the Rain-Slick Precipice of Darkness: Episode Two, 18.3, 91.7%, 2011-06-06
+Crazy Machines 2, 8.1, N/A, 2015-07-10
+The Witcher: Enhanced Edition, 6.8, N/A, 2015-03-05
+Resident Evil 5, 11.2, 0.0%, 2020-12-19
+Overgrowth, 5.6, N/A, 2020-12-19
+SEGA Mega Drive & Genesis Classics, 21.8, 4.0%, 2024-05-04
+Super Meat Boy, 7.6, 2.1%, 2023-12-14
+Magicka, 6.3, 3.4%, 2023-01-16
+Clickr, 10.9, 0.0%, 2015-09-24
+Dragon Age: Origins - Ultimate Edition, 6.0, N/A, 2023-05-17
+Shank 2, 5.5, 5.0%, 2020-01-20
+Age of Empires® III (2007), 5.5, N/A, 2019-10-03
+Bastion, 6.2, 12.5%, 2016-06-29
+Cthulhu Saves the World , 11.0, N/A, 2015-07-11
+Alan Wake, 5.2, 3.0%, 2020-12-19
+Blocks That Matter, 52.2, 68.8%, 2020-12-19
+The Binding of Isaac, 7.0, 3.0%, 2016-09-27
+Owlboy, 7.0, 16.7%, 2018-05-29
+Cave Story+, 21.6, 36.8%, 2024-01-22
+Galcon Legends, 8.2, 16.7%, 2015-07-16
+Orcs Must Die! 2, 5.1, 3.7%, 2016-09-09
+Awesomenauts, 7.7, 3.4%, 2016-01-29
+Castle Crashers, 40.9, 33.3%, 2024-02-24
+Call of Juarez Gunslinger, 28.9, 0.0%, 2016-02-04
+Infested Planet, 8.0, 2.8%, 2017-09-11
+Tales from Space: Mutant Blobs Attack, 11.2, 42.9%, 2016-02-12
+The Walking Dead, 5.6, 8.3%, 2016-08-14
+Sacred Citadel, 11.9, 20.0%, 2016-05-16
+Apotheon, 5.5, 3.3%, 2016-05-10
+Guns of Icarus Online, 7.7, 0.1%, 2015-07-18
+Cortex Command, 7.9, 18.2%, 2017-09-11
+Battle vs Chess, 7.4, N/A, 2018-10-18
+Mark of the Ninja, 6.0, 10.5%, 2016-06-25
+Guacamelee! Gold Edition, 34.2, 51.7%, 2014-03-25
+GameMaker: Studio, 31.0, 29.2%, 2016-09-07
+Painkiller Hell & Damnation, 38.6, 0.0%, 2015-09-30
+Secret World Legends, 10.5, N/A, 2016-12-01
+Demonicon, 5.5, 2.0%, 2018-12-17
+Go Home Dinosaurs!, 27.4, 0.0%, 2015-09-30
+Don't Starve, 48.7, N/A, 2024-06-15
+Grim Dawn, 15.9, 0.0%, 2019-03-21
+McPixel, 5.6, N/A, 2015-07-25
+Age of Empires II (2013), 7.4, 0.3%, 2019-10-03
+THE KING OF FIGHTERS XIII STEAM EDITION, 5.2, 4.3%, 2015-10-20
+Xenonauts, 8.6, N/A, 2016-04-20
+Brütal Legend, 5.7, 1.7%, 2021-02-05
+Blade Symphony, 10.2, 0.0%, 2015-07-09
+Galactic Civilizations III, 19.8, 0.0%, 2017-07-11
+Euro Truck Simulator 2, 26.9, 0.0%, 2016-04-04
+Fallen Enchantress: Legendary Heroes, 24.1, 1.9%, 2016-01-13
+War for the Overworld, 19.4, 0.7%, 2020-01-21
+Deadfall Adventures, 24.5, 0.0%, 2016-09-18
+Broken Age, 5.0, 4.4%, 2018-12-19
+LUFTRAUSERS, 11.7, 0.0%, 2020-07-23
+Sword of the Stars: The Pit, 6.6, 1.1%, 2019-12-15
+Shadowrun Returns, 26.5, N/A, 2016-04-04
+Anodyne, 22.3, 16.7%, 2017-09-26
+Dreamfall Chapters, 12.1, 0.0%, 2016-03-11
+The Banner Saga, 15.3, 0.0%, 2016-09-03
+Magicka 2, 11.1, 0.0%, 2023-01-16
+Contagion, 27.0, 0.0%, 2016-04-04
+BattleBlock Theater, 15.6, 33.3%, 2024-06-14
+7 Grand Steps: Step 1: What Ancients Begat, 7.0, N/A, 2015-07-08
+Hammerwatch, 6.9, 2.6%, 2022-06-03
+Spelunky, 13.1, 5.0%, 2019-12-07
+Wasteland 2, 11.8, 0.0%, 2016-03-06
+Ittle Dew, 30.6, 20.0%, 2021-02-14
+CastleStorm, 16.8, 39.1%, 2015-03-06
+Middle-earth™: Shadow of Mordor™, 20.0, 1.4%, 2020-12-19
+Styx: Master of Shadows, 14.0, 0.0%, 2015-11-29
+Nuclear Throne, 303.7, 31.8%, 2025-09-02
+Injustice: Gods Among Us Ultimate Edition, 9.5, 8.0%, 2015-12-15
+140, 22.6, 0.0%, 2017-06-22
+Poof, 22.0, 2.6%, 2017-04-29
+Bound By Flame, 13.0, 0.0%, 2018-12-16
+Supreme Ruler 1936, 10.9, N/A, 2015-12-21
+Kingdom Rush, 55.9, 68.9%, 2014-08-01
+Dungeon of the ENDLESS™, 21.0, 0.0%, 2017-10-31
+Blackguards, 27.8, 0.0%, 2016-04-04
+Super Comboman, 27.1, 63.2%, 2017-08-22
+Fight The Dragon, 7.1, 5.0%, 2016-06-28
+Shovel Knight: Treasure Trove, 6.2, 0.7%, 2019-12-27
+The Binding of Isaac: Rebirth, 626.6, 25.6%, 2025-08-07
+Valdis Story: Abyssal City, 5.4, 5.2%, 2018-09-24
+Lovers in a Dangerous Spacetime, 28.6, 21.4%, 2023-09-11
+Divide by Sheep, 14.3, 10.5%, 2015-09-30
+SteamWorld Dig, 24.0, 37.5%, 2019-04-17
+A Hat in Time, 7.7, 4.3%, 2023-09-19
+FOTONICA, 6.9, 10.0%, 2015-08-21
+Warmachine Tactics, 11.4, 0.0%, 2016-03-11
+PixelJunk™ Shooter, 9.2, 20.0%, 2023-02-16
+Hyper Light Drifter, 5.9, 8.7%, 2019-12-14
+Citizens of Earth, 28.4, 0.0%, 2017-09-12
+Tales of Maj'Eyal, 5.8, 0.1%, 2019-12-07
+Wooden Sen'SeY, 21.9, 4.8%, 2017-04-27
+Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™, 52.8, 0.0%, 2015-10-14
+Killer is Dead, 24.4, 4.2%, 2016-09-18
+Lethal League, 5.9, 8.7%, 2022-10-17
+Darkest Dungeon®, 8.0, 5.8%, 2019-12-07
+Crimsonland, 14.0, 0.0%, 2015-08-21
+Broken Sword 5 - the Serpent's Curse, 23.9, 0.0%, 2016-09-17
+Castle In The Darkness, 5.4, 27.3%, 2024-01-14
+Spintires®, 26.9, 0.0%, 2016-04-04
+Enola, 5.6, N/A, 2015-10-20
+Wyv and Keep: The Temple of the Lost Idol, 11.9, N/A, 2016-02-04
+CONSORTIUM 2014, 10.8, 0.0%, 2015-09-25
+Lords Of The Fallen, 6.7, 3.6%, 2019-03-22
+The Red Solstice, 20.6, 0.0%, 2016-07-31
+GameGuru Classic, 5.0, N/A, 2022-04-02
+Hand of Fate, 5.0, 1.9%, 2017-10-31
+Batman™: Arkham Origins Blackgate - Deluxe Edition, 8.0, 3.3%, 2019-02-12
+Shadowrun Chronicles - Boston Lockdown, 10.9, 0.0%, 2016-03-11
+Satellite Reign, 21.2, 0.0%, 2016-07-31
+Secrets of Grindea, 86.2, 20.3%, 2024-10-08
+AR-K, 10.5, 0.0%, 2015-07-04
+1Heart, 30.5, 4.5%, 2015-06-28
+Offworld Trading Company, 19.5, 0.0%, 2017-08-16
+Broforce, 19.1, 17.6%, 2025-08-05
+Always Sometimes Monsters, 13.7, 10.0%, 2016-11-19
+Guacamelee! Super Turbo Championship Edition, 143.6, 73.3%, 2024-02-09
+Chip, 7.7, 9.1%, 2015-07-10
+Diehard Dungeon, 10.1, 0.0%, 2016-02-16
+Shantae: Risky's Revenge - Director's Cut, 6.1, 7.7%, 2015-06-26
+RIVE, 11.9, 2.3%, 2017-04-07
+Joe Dever's Lone Wolf HD Remastered, 24.4, 0.0%, 2016-09-18
+The Troma Project, 6.4, N/A, 2019-03-01
+The I of the Dragon, 8.0, N/A, 2015-12-31
+A Wizard's Lizard, 49.8, 45.0%, 2016-06-28
+Stellaris, 15.4, 0.0%, 2017-06-02
+Fearless Fantasy, 5.0, 4.2%, 2015-11-20
+Super Chibi Knight, 5.5, 12.5%, 2020-05-23
+Salt and Sanctuary, 22.1, 10.8%, 2020-08-25
+Robot Rescue Revolution, 10.1, 0.0%, 2015-09-30
+Showtime!, 5.9, N/A, 2016-11-03
+Between Me and The Night, 6.4, 11.1%, 2016-11-02
+Warhammer 40:000: Dawn of War III, 17.4, 0.0%, 2018-01-08
+Tooth and Tail, 6.3, 5.3%, 2019-12-08
+ReignMaker, 8.8, 6.5%, 2015-08-07
+TY the Tasmanian Tiger 4, 5.0, 6.2%, 2016-02-07
+TransOcean: The Shipping Company, 25.9, 0.0%, 2016-04-04
+Armello, 20.1, 0.0%, 2017-07-15
+Akane the Kunoichi, 11.7, 28.6%, 2016-01-17
+Royal Defense, 10.9, 0.0%, 2016-11-15
+Pillars of Eternity, 19.4, 0.0%, 2017-08-16
+Kero Blaster, 20.1, 0.0%, 2023-01-16
+Overcast - Walden and the Werewolf, 6.6, N/A, 2015-11-18
+Cosmochoria, 14.3, 3.6%, 2015-09-25
+Road Not Taken, 22.0, 70.0%, 2019-12-16
+Loot Hero DX, 5.3, 80.0%, 2016-01-15
+Crowntakers, 10.7, 0.0%, 2015-08-21
+Never Alone (Kisima Ingitchuna), 6.0, 15.8%, 2017-03-03
+Olympia Rising, 6.3, N/A, 2016-04-16
+GemCraft - Chasing Shadows, 6.9, 1.4%, 2016-02-12
+Real Boxing™, 6.7, 9.1%, 2015-08-03
+Dreaming Sarah, 17.8, 9.1%, 2016-08-16
+Renowned Explorers: International Society, 14.4, 0.0%, 2016-04-22
+Heavy Bullets, 12.8, 5.9%, 2016-11-22
+GALAK-Z, 10.2, 5.7%, 2016-08-22
+Frederic: Resurrection of Music, 7.2, 5.6%, 2015-07-15
+Ryse: Son of Rome, 5.2, 4.1%, 2017-02-07
+Of Guards And Thieves, 13.8, 0.0%, 2017-12-08
+Momodora III, 14.3, 0.0%, 2024-01-28
+TRISTOY, 5.6, 8.0%, 2015-08-22
+Roundabout, 12.1, 0.0%, 2016-09-03
+INSIDE, 5.5, 14.3%, 2021-01-08
+Qora, 7.2, 60.0%, 2017-09-30
+The Elder Scrolls Online, 6.2, N/A, 2017-10-29
+Crystals of Time, 5.0, N/A, 2016-09-23
+Iron Fisticle, 5.9, 9.7%, 2019-04-11
+Will Fight for Food: Super Actual Sellout: Game of the Hour, 7.7, 63.6%, 2015-07-18
+Penarium, 5.3, 12.5%, 2016-04-16
+Savage Lands, 5.2, 5.0%, 2020-04-09
+Back to Bed, 7.3, 20.0%, 2018-05-26
+City Quest, 9.2, 4.0%, 2017-01-20
+Onikira: Demon Killer, 19.6, 0.0%, 2016-08-12
+Super Panda Adventures, 88.1, N/A, 2021-01-17
+Enter the Gungeon, 9.8, 1.9%, 2025-05-20
+Sproggiwood, 6.8, 15.8%, 2017-09-18
+Chasm, 7.3, 5.0%, 2019-12-15
+Rain World, 16.8, 0.0%, 2025-01-25
+METAL SLUG X, 5.7, 13.3%, 2019-02-28
+Metrocide, 14.2, 3.0%, 2015-07-26
+REVOLVER360 RE:ACTOR, 5.8, 1.7%, 2015-11-28
+Rampage Knights, 65.3, 77.4%, 2019-12-14
+Blackguards 2, 27.6, 0.0%, 2016-04-04
+Amazing Princess Sarah, 6.0, 8.3%, 2016-06-28
+Bravada, 5.0, 2.1%, 2018-12-16
+Wave of Darkness, 12.4, 0.0%, 2017-03-04
+Grim Fandango Remastered, 6.4, 2.1%, 2016-01-03
+The Flame in the Flood, 20.6, 0.0%, 2020-12-19
+Gold Rush! Anniversary, 5.6, N/A, 2016-09-18
+Moon Hunters, 5.2, 8.5%, 2022-02-07
+Deadlings - Rotten Edition, 9.6, 3.1%, 2015-09-30
+Oscura: Lost Light, 13.7, 14.3%, 2015-07-29
+Coffin Dodgers, 5.2, 5.4%, 2015-11-28
+Fabula Mortis, 16.7, N/A, 2015-09-27
+Toren, 24.4, 16.7%, 2016-09-17
+Silence of the Sleep, 10.9, N/A, 2016-01-18
+Yury, 12.2, 7.1%, 2016-10-17
+SteamWorld Heist, 8.2, 4.3%, 2017-10-11
+Don't Starve Together, 6.0, N/A, 2024-06-14
+Laserlife, 5.2, 8.3%, 2016-08-31
+Grow Home, 28.6, 0.0%, 2016-08-10
+The Magic Circle, 5.8, 7.1%, 2016-04-21
+Viking Squad, 6.3, 14.3%, 2016-10-14
+Horizon Shift, 6.5, 8.3%, 2016-04-11
+Feist, 12.3, 20.0%, 2016-02-15
+Out of Reach, 24.3, 2.3%, 2016-09-18
+Super Life of Pixel, 22.2, 0.0%, 2016-04-13
+The Marvellous Miss Take, 35.9, 5.3%, 2015-08-20
+The Deer God, 6.2, 3.3%, 2016-06-24
+Stealth Inc 2, 45.2, 0.0%, 2016-06-25
+Children of Morta, 11.0, 13.3%, 2022-12-12
+Warlocks vs Shadows, 7.8, 9.5%, 2016-04-19
+ONE PIECE PIRATE WARRIORS 3, 11.8, 0.0%, 2017-03-12
+Crossing Souls, 9.0, 12.5%, 2020-08-26
+Last Inua, 6.8, 17.6%, 2015-07-26
+PixelJunk™ Shooter Ultimate, 6.0, 3.7%, 2023-02-04
+Spriter Pro, 8.3, N/A, 2018-09-29
+Marvin's Mittens, 5.5, N/A, 2017-06-05
+Replay - VHS is not dead, 6.8, 7.1%, 2020-01-20
+But to Paint a Universe, 23.5, 0.0%, 2016-03-07
+Grimoire: Manastorm, 6.5, N/A, 2016-02-11
+LISA, 52.7, 69.1%, 2023-08-25
+Goats on a Bridge, 11.1, 0.0%, 2015-07-17
+Catmouth Island, 5.8, N/A, 2015-07-23
+Bloodsports.TV, 13.1, 1.8%, 2016-04-28
+Zombie Vikings, 10.7, 9.1%, 2016-08-01
+Pixel Heroes: Byte & Magic, 7.6, 1.8%, 2017-04-28
+Oceanhorn: Monster of Uncharted Seas, 10.7, 9.5%, 2022-02-10
+I: Gladiator, 12.6, 2.3%, 2016-05-04
+Headlander, 21.5, 6.5%, 2020-12-19
+Crystal Towers 2, 5.6, 2.9%, 2016-11-01
+Deity Quest, 16.4, 0.0%, 2015-09-26
+Domestic Dog, 13.1, 0.0%, 2017-03-04
+Armed with Wings: Rearmed, 10.2, 5.0%, 2018-09-28
+Camera Obscura, 19.8, 2.2%, 2015-07-07
+Garden Rescue, 14.1, 0.0%, 2016-10-06
+The Dark Stone from Mebara, 8.1, N/A, 2016-03-09
+Terra Incognita Chapter One: The Descendant, 12.4, 0.0%, 2017-03-04
+Doodle God, 26.2, 0.0%, 2016-04-04
+Abyss Raiders: Uncharted, 12.7, 10.0%, 2015-08-19
+Cubicle Quest, 12.6, N/A, 2016-04-28
+Sherlock Holmes: The Devil's Daughter, 19.6, 0.0%, 2017-07-11
+Belladonna, 5.5, N/A, 2015-10-20
+Spirit Of War, 13.7, N/A, 2016-02-21
+King of Dragon Pass, 10.6, 0.0%, 2017-09-23
+The Deadly Tower of Monsters, 5.5, 4.0%, 2020-12-18
+The Adventures of Tree, 14.6, 0.9%, 2016-09-01
+Pester, 8.5, N/A, 2015-12-30
+Slinki, 12.5, 6.7%, 2015-09-04
+Space Run Galaxy, 12.7, 0.0%, 2017-03-12
+Sheltered, 15.4, 0.0%, 2016-09-03
+Eron, 7.5, N/A, 2021-01-11
+Big Action Mega Fight!, 5.5, 44.4%, 2016-09-06
+Defend Your Life, 15.2, 5.0%, 2016-02-21
+Make it indie!, 5.2, 88.9%, 2016-09-26
+No Turning Back: The Pixel Art Action-Adventure Roguelike, 13.7, 0.0%, 2016-02-21
+Nightside, 20.4, 0.0%, 2016-07-31
+Cards and Castles, 5.9, 12.5%, 2016-04-11
+Super Daryl Deluxe, 91.6, 100.0%, 2019-01-25
+The Living Dungeon, 6.0, 4.8%, 2016-04-06
+Holy Potatoes! A Weapon Shop?!, 28.2, 0.0%, 2016-09-02
+RPG Maker MV, 9.5, N/A, 2022-03-19
+Volume, 5.0, 4.2%, 2016-09-03
+Poly Bridge, 11.8, 4.5%, 2017-03-12
+Dragon's Dogma: Dark Arisen, 11.2, 1.7%, 2020-12-11
+Hollow Knight, 172.9, 84.1%, 2021-02-09
+Kingdom: Classic, 20.7, 2.9%, 2016-06-28
+Her Story, 14.4, 0.0%, 2017-06-30
+Albert and Otto: The Adventure Begins, 5.1, 25.0%, 2015-12-17
+Mysterious Space, 6.8, 2.2%, 2016-09-01
+Apocalypse: Party's Over, 5.8, 5.7%, 2016-11-17
+Pongo, 9.4, 25.0%, 2016-02-07
+NotTheNameWeWanted, 12.7, 0.0%, 2016-02-14
+Sparkle 2, 6.4, 7.1%, 2016-10-06
+Gem Wars: Attack of the Jiblets, 22.4, 0.0%, 2016-04-17
+VERLIES II, 5.0, 2.3%, 2017-02-08
+Teddy Floppy Ear - The Race, 16.7, 0.0%, 2016-04-19
+Gnumz: Masters of Defense, 13.9, 0.0%, 2016-11-17
+Gunslugs, 5.6, 9.5%, 2015-09-07
+Black Sails, 10.8, N/A, 2016-01-17
+DARK SOULS™ III, 5.7, 2.3%, 2020-12-18
+Death Tractor, 15.4, 6.2%, 2016-02-21
+Chronicon, 6.3, 6.6%, 2025-10-04
+Taimumari: Definitive Edition, 13.5, 9.4%, 2017-07-06
+Trap Them, 5.0, N/A, 2016-02-23
+GUILTY GEAR Xrd -SIGN-, 5.5, 4.2%, 2023-05-12
+Western Press, 5.6, 20.0%, 2016-12-03
+Putrefaction, 10.4, 10.0%, 2016-02-21
+Hush, 20.4, 0.0%, 2015-09-30
+Red Rope: Don't Fall Behind, 6.6, 4.3%, 2016-11-22
+Lilly and Sasha: Guardian Angels, 6.2, N/A, 2015-08-30
+Rivals of Aether, 12.3, 13.9%, 2025-07-25
+Dead In Bermuda, 23.9, 0.0%, 2016-09-17
+Necropolis, 5.2, 7.7%, 2021-01-10
+Macabre, 7.4, N/A, 2016-08-31
+Jet Racing Extreme, 23.2, 0.0%, 2016-08-01
+Shadow Complex Remastered, 6.4, 5.1%, 2016-11-09
+Tachyon Project, 24.9, 9.5%, 2017-04-07
+Novus Inceptio, 19.6, 1.7%, 2017-08-16
+Steel Rain, 5.8, 1.2%, 2017-05-10
+Alpha Runner, 13.0, 25.0%, 2015-08-09
+Project Tarvotan, 24.5, N/A, 2017-04-07
+Oxenfree, 7.7, 7.7%, 2022-01-16
+Collisions, 10.7, 0.0%, 2015-09-24
+Army of Pixels, 22.9, 50.0%, 2017-07-13
+Rise of the Tomb Raider, 5.0, 1.4%, 2022-01-22
+Labyrinth Simulator, 13.9, N/A, 2016-02-21
+Undertale, 22.3, N/A, 2021-02-23
+King Lucas, 24.7, 0.0%, 2017-04-07
+TSIOQUE, 5.2, 3.2%, 2021-02-05
+Super Man Or Monster, 7.8, 10.0%, 2019-10-19
+Squad, 8.0, N/A, 2019-12-16
+Hurtworld, 7.6, N/A, 2019-12-15
+Iconoclasts, 5.7, 18.2%, 2018-09-19
+Get Over Here, 5.2, N/A, 2015-11-28
+Punch Club, 5.9, 12.8%, 2017-08-24
+Miracle Fly, 14.2, 0.0%, 2016-02-21
+Toby: The Secret Mine, 10.4, 80.0%, 2016-10-03
+ANKI, 5.8, N/A, 2015-09-08
+We Are The Dwarves, 5.0, 5.9%, 2016-12-10
+Ittle Dew 2+, 6.3, 30.0%, 2022-03-10
+The Adventure Pals, 17.6, 51.6%, 2021-05-01
+12 Labours of Hercules IV: Mother Nature, 23.4, 9.1%, 2016-03-08
+Chronicles of the Witches and Warlocks, 11.5, 0.0%, 2016-11-15
+Ace of Words, 8.4, 27.8%, 2015-12-12
+Epistory - Typing Chronicles, 20.9, 40.0%, 2020-11-27
+Fasaria World Online, 23.0, 0.0%, 2016-02-02
+Legends of Solitaire: Curse of the Dragons, 24.1, 0.0%, 2016-04-18
+The Prism, 5.4, N/A, 2021-01-19
+Tinboy, 13.0, 0.0%, 2017-03-04
+Wuppo - Definitive Edition, 20.1, 4.3%, 2020-12-19
+Rabi-Ribi, 20.2, 2.3%, 2022-10-18
+Poi, 6.5, 12.0%, 2017-04-27
+Press X to Not Die, 5.0, 18.2%, 2016-05-10
+Miner Mayhem, 10.8, N/A, 2016-09-13
+Dungelot : Shattered Lands, 8.6, 19.3%, 2018-12-17
+Nex Machina, 5.5, 7.7%, 2017-12-02
+This Book Is A Dungeon, 12.1, N/A, 2016-09-15
+Curvatron, 12.0, 12.5%, 2016-09-14
+Wasteland 2: Director's Cut, 18.4, 0.0%, 2019-12-18
+Godot Engine, 7.8, N/A, 2025-08-22
+UTOPIA 9 - A Volatile Vacation, 22.8, 56.5%, 2022-09-07
+Stone Tales, 22.0, N/A, 2016-04-06
+Flight of the Paladin, 20.9, 0.0%, 2016-07-31
+Pony Island, 10.8, 10.0%, 2018-09-28
+Super Ubie Island REMIX, 53.3, N/A, 2020-01-20
+There Was a Caveman, 5.3, 5.0%, 2016-09-03
+Mad Nords: Probably an Epic Quest, 13.0, 4.8%, 2017-03-04
+Dream Factory, 7.8, N/A, 2016-11-21
+Dr. Langeskov: The Tiger: and The Terribly Cursed Emerald: A Whirlwind Heist, 6.2, 16.7%, 2016-02-16
+Blackfaun, 6.5, 4.0%, 2017-01-04
+Contract With The Devil, 11.3, 0.0%, 2016-11-15
+12 is Better Than 6, 7.2, 10.9%, 2017-02-15
+Suits: A Business RPG, 12.9, 5.7%, 2016-02-03
+Swordbreaker The Game, 24.6, 1.5%, 2019-02-17
+Legend, 22.1, N/A, 2017-04-27
+Raining Blobs, 10.6, 0.0%, 2020-01-20
+Gnomes Garden, 11.2, 0.0%, 2016-11-15
+Energy Cycle, 12.8, 11.1%, 2016-04-28
+Bleeding Border, 23.6, 0.0%, 2016-03-09
+Demented, 5.7, N/A, 2022-11-17
+The Madness of Little Emma, 6.2, 2.5%, 2020-01-20
+Spelunky 2, 6.8, 3.1%, 2022-08-27
+Iron Commando, 6.2, N/A, 2016-11-21
+Pankapu, 16.2, 32.1%, 2017-02-04
+Candle, 5.1, 8.7%, 2017-05-09
+KRUM - Edge Of Darkness, 7.9, N/A, 2022-11-21
+Plantera, 8.8, 51.7%, 2017-04-20
+Plastiland, 22.7, N/A, 2016-04-04
+ZHEROS, 5.0, 4.3%, 2016-04-20
+Day D: Tower Rush, 11.4, 8.3%, 2016-11-17
+Project Highrise, 13.4, 0.0%, 2020-01-20
+Hero Defense, 6.0, 3.0%, 2016-06-16
+Marooners, 7.8, 2.9%, 2017-09-11
+The fall of gods, 5.1, N/A, 2021-09-09
+Little Nightmares, 6.8, 4.5%, 2021-11-29
+ONE PIECE BURNING BLOOD, 19.4, 0.0%, 2017-08-16
+Goodnight Butcher, 12.8, N/A, 2016-04-28
+TurnOn, 10.1, 7.3%, 2017-01-20
+Solitaire Christmas. Match 2 Cards, 10.9, 0.0%, 2016-11-15
+Gems of the Aztecs, 11.1, N/A, 2016-11-15
+Tyrfing Cycle |Vanilla|, 11.1, 0.0%, 2017-01-20
+Disastr_Blastr, 6.5, 12.8%, 2018-12-17
+Doodle Kingdom, 11.3, 0.0%, 2016-11-17
+Aseprite, 22.7, N/A, 2025-09-11
+Iron Sea Defenders, 18.1, 0.0%, 2017-01-23
+Wildfire, 6.5, 1.7%, 2021-01-10
+Silver Knight, 25.0, N/A, 2016-04-19
+Neon Drive, 13.4, 0.0%, 2017-05-24
+Lost Castle, 5.1, 3.1%, 2016-04-10
+Onion Force, 5.0, N/A, 2022-12-29
+The Final Station, 18.7, 21.7%, 2017-05-15
+GoNNER, 5.9, 15.8%, 2018-09-26
+Tricky Towers, 11.1, 3.4%, 2023-09-11
+Stories: The Path of Destinies, 5.6, 8.1%, 2019-12-08
+DreamBreak, 22.2, 0.0%, 2017-04-27
+Loot Rascals, 5.5, 9.1%, 2017-10-31
+Alice's Patchwork, 11.6, 0.0%, 2016-11-15
+Skautfold: Shrouded in Sanity, 5.0, 10.5%, 2018-07-25
+The Haunting of Billy Classic, 20.1, N/A, 2016-07-31
+Blossom Tales: The Sleeping King, 40.5, 85.0%, 2024-10-08
+Bad Caterpillar, 24.6, 36.4%, 2017-04-07
+Spectrubes, 9.3, 25.0%, 2016-05-04
+Mr. Nibbles Forever, 7.0, 7.1%, 2023-07-11
+Overcooked, 19.4, 16.7%, 2017-08-23
+Axes and Acres, 24.6, 0.0%, 2017-04-07
+Gnomes Garden 2, 11.1, 0.0%, 2016-11-15
+Monster Boy And The Cursed Kingdom, 5.9, 15.6%, 2019-12-05
+Battle Chasers: Nightwar, 6.9, 2.1%, 2018-09-28
+Caveblazers, 6.4, 9.5%, 2019-12-27
+Love is Dead, 6.6, 8.6%, 2019-12-08
+Demon's Crystals, 7.5, 14.3%, 2018-04-05
+Shiny Gauntlet, 21.9, 0.0%, 2017-04-25
+Gravity Den, 8.8, 6.2%, 2016-08-31
+Omensight, 7.4, 5.9%, 2019-12-07
+Lines, 36.7, 0.0%, 2017-12-29
+The Slimeking's Tower, 21.9, 18.9%, 2020-01-05
+Cursor Challenge, 5.5, N/A, 2016-10-29
+Rocket Riot, 24.9, 4.2%, 2017-04-07
+Blamdown Udder Fury, 6.1, 4.8%, 2017-05-06
+Tales Across Time, 10.2, 0.0%, 2016-05-04
+Fury Unleashed, 11.8, 0.0%, 2021-11-13
+Super Space Pug, 12.6, N/A, 2017-03-04
+Legion TD 2, 18.2, 0.0%, 2022-12-16
+Shattered Throne, 6.7, N/A, 2020-01-20
+Super Mega Neo Pug, 5.7, N/A, 2017-03-04
+Death Squared, 7.5, 12.0%, 2022-11-14
+Human Fall Flat, 8.0, 1.4%, 2022-06-02
+Magma Tsunami, 6.5, N/A, 2017-01-18
+Machine Made: Rebirth, 5.8, 6.2%, 2016-11-21
+Nary, 24.6, 0.0%, 2017-04-07
+Planet Coaster, 8.2, 3.1%, 2020-07-22
+Figment, 9.8, 47.8%, 2017-09-29
+Praey for the Gods, 10.9, 0.0%, 2023-07-25
+Kingdom: New Lands, 6.3, 2.9%, 2017-01-23
+Pixelscape: Oceans, 13.0, 8.3%, 2017-03-04
+The Ember Saga: A New Fire, 6.6, N/A, 2017-11-30
+Star Fields, 5.8, N/A, 2017-03-03
+Wild Terra Online, 9.8, 2.0%, 2018-07-26
+Manual Samuel - Last Tuesday Edition, 6.1, 5.6%, 2017-05-09
+Goo Saga - HD Edition, 21.7, 3.0%, 2017-07-13
+Unexplored, 6.8, 3.4%, 2017-06-22
+Streets of Rogue, 7.6, 1.9%, 2020-02-12
+SkyTime, 8.9, 4.2%, 2017-01-20
+Turbo Pug DX, 12.3, 3.7%, 2017-03-04
+Panzer Warfare, 7.5, 25.0%, 2017-03-01
+Eldritch Hunter, 19.8, 0.0%, 2017-08-23
+Warriors of Vilvatikta, 12.4, 0.0%, 2017-03-04
+Marty Thinks 4th Dimensionally, 5.3, 1.1%, 2017-10-30
+Board Defenders, 13.3, 9.5%, 2017-03-04
+Stellar Interface, 19.2, 2.1%, 2017-08-16
+Just Cause 4, 5.0, 1.6%, 2022-11-12
+Ballistick, 5.8, 6.7%, 2016-11-20
+Mahjong World Contest, 13.2, 0.0%, 2016-11-16
+Alice's Patchworks 2, 11.5, 0.0%, 2016-11-15
+Monsti, 5.3, N/A, 2016-09-22
+A Day in the Woods, 5.3, 18.2%, 2016-11-03
+Solitaire Beach Season, 10.9, 0.0%, 2016-11-15
+Wells, 14.1, 28.6%, 2017-09-30
+Turbo Pug 3D, 12.3, 0.0%, 2017-03-04
+Shu, 5.4, 16.7%, 2021-02-05
+World to the West, 12.6, 0.0%, 2024-01-14
+Wandersong, 8.7, 2.7%, 2025-03-01
+Archimedes, 7.9, N/A, 2016-11-21
+Ultimate Solid, 21.7, 0.0%, 2017-07-15
+Guacamelee! 2, 47.0, 51.0%, 2022-01-17
+Sundered: Eldritch Edition, 5.6, 5.0%, 2019-02-22
+Unforgiving Trials: The Space Crusade, 8.7, N/A, 2016-11-21
+Magnetized, 21.8, 0.0%, 2017-07-15
+Bric, 9.2, N/A, 2017-07-14
+Octave, 6.2, N/A, 2016-12-14
+Lara Croft GO, 8.7, 29.4%, 2020-11-07
+Forgotton Anne, 7.2, 6.1%, 2018-07-25
+The Land of Dasthir, 12.7, 0.0%, 2017-03-04
+Xenus 2. White gold., 5.2, N/A, 2017-01-19
+Town of Night, 12.9, N/A, 2017-03-04
+Iron Crypticle, 6.8, 7.9%, 2018-04-06
+Mankind Defender, 9.0, N/A, 2017-01-20
+Fresh Body, 5.3, 6.9%, 2017-12-06
+Project Abyss, 5.6, 3.4%, 2017-02-06
+The Sexy Brutale, 7.4, 5.6%, 2017-12-03
+TUNIC, 6.8, 19.4%, 2025-02-19
+Germ Wars, 5.6, 1.8%, 2017-03-03
+Rakuen, 22.6, 0.0%, 2017-08-24
+Wayward Souls, 5.3, 9.7%, 2019-12-08
+The Inner Darkness, 7.0, N/A, 2017-05-15
+Access Denied, 22.4, 28.6%, 2017-04-27
+Introvert Quest, 5.9, N/A, 2017-05-10
+Tyrfing Cycle, 8.9, 6.7%, 2017-01-20
+Bud Spencer & Terence Hill - Slaps And Beans, 5.9, 2.9%, 2024-09-10
+Adventuring gentleman, 13.7, 4.5%, 2017-07-13
+Fighters Unleashed, 5.2, N/A, 2021-03-24
+Santa Rockstar Steam Edition, 5.4, N/A, 2022-02-09
+SteamWorld Dig 2, 35.2, 76.5%, 2020-10-21
+Golf It!, 6.7, 2.3%, 2024-01-31
+Flame of Memory, 5.0, N/A, 2017-07-23
+1979 Invasion Earth, 7.2, 13.3%, 2017-02-28
+Drunken Fight Simulator, 5.7, N/A, 2021-01-14
+2 Ninjas 1 Cup, 22.6, 10.0%, 2017-07-05
+Witchcraft, 6.0, N/A, 2017-12-22
+Alpacapaca Dash, 5.5, 23.1%, 2017-03-01
+Old Man's Journey, 5.4, N/A, 2020-01-21
+Zombie Ballz, 24.7, 0.0%, 2017-04-07
+Passpartout: The Starving Artist, 5.0, 16.0%, 2017-12-02
+The End Is Nigh, 7.8, 0.9%, 2024-09-07
+Steampunk Syndicate, 5.3, N/A, 2017-07-15
+WayOut 2: Hex, 14.1, 5.0%, 2017-09-26
+Dead Drop, 5.5, N/A, 2021-01-13
+Dead Cells, 177.1, 38.0%, 2024-04-22
+Planetoid, 24.6, N/A, 2017-04-07
+CPU Invaders, 22.1, 0.0%, 2017-07-15
+Yuppie Psycho, 5.2, 6.2%, 2019-05-02
+World of One, 6.0, 5.3%, 2017-07-10
+The Vagrant, 7.3, 2.5%, 2019-02-24
+Lost Words: Beyond the Page, 7.4, 66.7%, 2022-12-15
+Molemen Must Die!, 21.7, 16.7%, 2017-07-05
+Skautfold: Usurper, 6.5, 5.6%, 2018-11-07
+Tank Destroyer, 7.0, N/A, 2017-08-28
+Star of Providence, 5.3, 3.8%, 2023-11-24
+Psebay, 19.2, 0.0%, 2017-08-16
+Minit, 6.0, 33.3%, 2019-11-13
+Star Story: The Horizon Escape, 5.6, 2.5%, 2019-02-28
+Bravery: Rise of The Last Hero, 22.4, 7.7%, 2017-06-30
+Runic Rampage, 12.6, 58.1%, 2017-09-18
+Remnant: From the Ashes, 5.7, 4.0%, 2023-07-25
+Boss Defiance, 14.3, 12.5%, 2017-10-31
+The Swords of Ditto: Mormo's Curse, 36.4, 50.0%, 2022-03-08
+Freaky Awesome, 7.5, 2.4%, 2017-11-29
+A SECOND BEFORE US, 14.3, 0.0%, 2017-09-26
+Injustice™ 2, 6.8, 1.4%, 2024-09-12
+Mana Spark, 7.5, 10.0%, 2019-10-21
+Risk of Rain 2, 24.0, 1.3%, 2022-12-29
+Nongünz, 19.9, 3.8%, 2017-08-23
+Last Day of June, 6.3, 9.5%, 2018-04-05
+60 Parsecs!, 7.6, 2.3%, 2019-12-09
+Slay the Spire, 14.1, 6.5%, 2020-09-14
+UnderMine, 8.6, 4.2%, 2022-06-07
+ClickRaid, 7.3, 0.8%, 2017-11-13
+Warsim: The Realm of Aslona, 5.9, N/A, 2018-11-07
+My Time at Portia, 9.1, 1.1%, 2020-12-19
+8Doors: Arum's Afterlife Adventure, 11.8, 4.5%, 2021-05-28
+Rise of Industry, 12.2, 0.0%, 2021-01-17
+GRIS, 6.2, 5.9%, 2025-01-30
+Sword Legacy Omen, 6.3, 8.3%, 2019-12-12
+Fell Seal: Arbiter's Mark, 11.0, 0.0%, 2020-08-23
+Kingdom Two Crowns, 5.4, 10.9%, 2022-02-08
+Planet Zoo, 10.6, 5.3%, 2022-11-15
+Don't Sink, 6.8, 6.7%, 2019-12-09
+Darksiders Genesis, 11.3, 0.0%, 2021-06-05
+PUSS!, 5.5, 4.0%, 2019-12-08
+Vigil: The Longest Night, 6.5, 4.3%, 2025-09-02
+Overcooked! 2, 10.7, 0.0%, 2021-12-14
+Wytchwood, 43.1, 100.0%, 2022-03-14
+Raji: An Ancient Epic, 6.2, 9.5%, 2022-11-12
+Crash Bandicoot™ N. Sane Trilogy, 7.8, 2.7%, 2020-12-19
+Neversong, 15.7, 36.4%, 2023-03-26
+Temtem, 18.2, 0.0%, 2023-07-10
+Forager, 8.0, 10.7%, 2021-06-29
+Sable, 10.9, 8.9%, 2023-07-02
+EARTHLOCK, 13.8, 0.0%, 2021-01-10
+Red Solstice 2: Survivors, 11.6, 0.0%, 2022-04-02
+Warhammer: Chaosbane, 18.7, 2.3%, 2021-02-05
+Blasphemous, 7.1, 2.2%, 2022-02-20
+Unruly Heroes, 6.0, 11.5%, 2020-08-23
+Rogue Heroes: Ruins of Tasos, 67.0, 82.1%, 2022-05-28
+Neon Abyss, 5.3, 2.9%, 2022-02-08
+Levelhead, 18.3, 0.0%, 2021-11-14
+Destroy All Humans!, 5.5, 10.0%, 2022-11-13
+Shining Resonance Refrain, 11.6, 4.3%, 2021-02-05
+Yakuza Kiwami, 8.7, 1.8%, 2020-12-19
+Batbarian: Testament of the Primordials, 7.2, 4.0%, 2022-02-08
+Garden Paws, 11.7, 0.0%, 2023-05-15
+Yooka-Laylee and the Impossible Lair, 5.7, 2.1%, 2021-02-05
+Gravity Circuit, 6.2, 1.9%, 2025-04-10
+The Eternal Cylinder, 10.1, 8.3%, 2025-02-01
+Control Ultimate Edition, 7.7, 1.5%, 2023-05-12
+The Battle of Polytopia, 9.9, N/A, 2021-07-16
+GARAGE: Bad Trip, 6.9, 4.8%, 2022-02-08
+Death's Door, 48.8, 83.3%, 2022-11-04
+Reventure, 7.6, 12.9%, 2021-01-08
+Summer Catchers, 5.2, 2.5%, 2024-01-31
+Swag and Sorcery, 5.3, 2.1%, 2022-02-14
+INMOST, 10.2, 44.8%, 2020-08-23
+The Dark Pictures Anthology: Man of Medan, 5.7, 3.3%, 2022-10-04
+Colt Canyon, 6.2, 2.5%, 2023-01-16
+Minoria, 5.9, 6.7%, 2021-02-05
+Death Trash, 18.9, 35.7%, 2022-09-17
+Sparklite, 39.4, 100.0%, 2019-12-13
+Spiritfarer®: Farewell Edition, 27.6, 20.5%, 2025-08-04
+Legend of Keepers, 17.2, 0.0%, 2022-11-26
+Just Die Already, 11.6, 0.0%, 2022-02-12
+Spyro™ Reignited Trilogy, 12.0, 1.0%, 2020-12-19
+Ring of Pain, 5.5, 0.7%, 2023-01-16
+Tools Up!, 5.2, 3.1%, 2022-06-02
+KungFu Kickball, 5.2, 7.7%, 2024-01-29
+Terror of Hemasaurus, 7.9, 40.0%, 2024-02-23
+Devil Slayer - Raksasi, 5.7, 2.5%, 2019-12-07
+Evoland Legendary Edition, 7.9, 27.7%, 2021-02-05
+Lamentum, 7.5, 21.1%, 2022-02-08
+Merchant of the Skies, 5.4, 16.7%, 2023-07-09
+Kingdoms of Amalur: Re-Reckoning, 11.0, 1.4%, 2023-01-16
+Pilgrims, 6.8, 31.1%, 2020-04-09
+River City Girls, 6.5, 3.4%, 2023-10-09
+Ori and the Will of the Wisps, 6.1, 2.7%, 2024-05-15
+Conan Chop Chop, 17.0, 33.3%, 2024-08-12
+Meteorfall: Krumit's Tale, 6.0, 5.9%, 2025-09-27
+Figment 2: Creed Valley, 5.3, 5.6%, 2025-04-19
+The Gunk, 5.0, 11.8%, 2024-01-29
+Stranger Things 3: The Game, 7.3, 12.9%, 2019-12-06
+Monster Train, 10.5, 3.8%, 2022-11-13
+Eldest Souls, 17.1, 10.0%, 2023-02-19
+Mortal Shell, 5.7, 2.7%, 2023-05-12
+Persona 4 Golden, 12.3, 0.0%, 2025-02-01
+Builder Simulator, 10.6, 0.0%, 2023-07-13
+GRIME, 5.6, 8.5%, 2023-07-08
+Iris and the giant, 10.3, 12.5%, 2021-01-07
+Unpacking, 6.8, 4.0%, 2024-01-30
+ATOM RPG Trudograd, 7.7, 3.1%, 2022-11-13
+Arietta of Spirits, 15.3, 93.3%, 2025-07-11
+Skul: The Hero Slayer, 7.3, 1.0%, 2021-02-05
+Going Under, 5.0, 4.3%, 2025-09-27
+Foretales, 10.2, 0.0%, 2023-09-19
+Carto, 9.4, 5.0%, 2022-12-15
+INDUSTRIA, 5.2, 21.7%, 2022-11-11
+Pathfinder: Wrath of the Righteous - Enhanced Edition, 13.5, 0.0%, 2023-05-15
+Pumpkin Jack, 8.3, 16.7%, 2023-09-19
+Turnip Boy Commits Tax Evasion, 5.2, 24.3%, 2022-02-09
+Alwa's Legacy, 40.2, 58.3%, 2020-09-07
+Mr. Sun's Hatbox, 5.0, 5.6%, 2025-02-01
+Coromon, 5.5, 2.5%, 2025-02-01
+Sir Whoopass™: Immortal Death, 19.7, 61.4%, 2025-03-15
+Destroy All Humans! 2 - Reprobed, 5.8, 2.3%, 2024-02-08
+Astral Ascent, 6.2, 5.6%, 2024-09-24
+Remnant II, 5.1, 1.5%, 2025-01-30
+SpongeBob SquarePants: The Cosmic Shake, 7.5, 2.3%, 2024-09-10
+Pronty, 10.0, 2.3%, 2024-01-25
+Toodee and Topdee, 7.9, 4.8%, 2024-01-29
+Greak: Memories of Azur, 9.6, 4.2%, 2023-12-29
+Cult of the Lamb, 61.3, 45.8%, 2024-08-12
+McPixel 3, 7.1, 5.4%, 2025-04-16
+Five Dates, 5.0, 20.0%, 2023-05-11
+ENDER LILIES: Quietus of the Knights, 5.5, 7.9%, 2024-01-25
+Grow: Song of the Evertree, 5.5, 4.5%, 2023-05-12
+Persona 5 Strikers, 8.3, 2.1%, 2025-01-30
+Arcade Paradise, 9.7, 3.7%, 2023-08-07
+Luck be a Landlord, 11.8, 0.0%, 2025-09-27
+The Legend of Tianding, 7.5, 3.8%, 2024-01-28
+Nobody Saves the World, 111.6, 97.6%, 2024-02-09
+Cozy Grove, 18.9, 21.4%, 2022-09-08
+A Guidebook Of Babel, 5.3, 5.3%, 2024-09-09
+Ghostwire: Tokyo, 6.5, 1.5%, 2023-07-08
+Luna's Fishing Garden, 5.7, 14.3%, 2023-08-28
+Dead Estate, 6.4, 1.5%, 2023-10-02
+From Space, 7.7, 2.4%, 2024-01-31
+Batora: Lost Haven, 6.8, 3.3%, 2023-07-25
+Transiruby, 29.9, 72.2%, 2025-03-26
+Blast Brigade vs. the Evil Legion of Dr. Cread, 29.4, 21.2%, 2025-04-07
+DREDGE, 39.9, 56.7%, 2024-11-05
+Tinykin, 6.7, 2.3%, 2024-01-31
+Core Keeper, 158.0, 25.5%, 2025-09-15
+Islets, 23.7, 84.1%, 2022-09-05
+Into the Necrovale, 9.5, 6.7%, 2025-10-05
+Momodora: Moonlit Farewell, 32.4, 84.2%, 2024-01-28
+Blossom Tales 2: The Minotaur Prince, 66.5, 90.0%, 2024-10-08
+Vampire Survivors, 5.5, 1.3%, 2024-11-23
+DAVE THE DIVER, 12.4, 11.6%, 2024-01-28
+Pizza Possum, 6.2, 28.6%, 2025-07-11
+Kena: Bridge of Spirits, 8.2, 2.4%, 2025-04-15
+20 Minutes Till Dawn, 10.3, 2.9%, 2023-08-28
+Tiny Rogues, 49.3, 17.4%, 2023-10-04
+Bosorka, 7.1, 10.0%, 2025-09-02
+Mr. Run and Jump, 6.3, 6.1%, 2025-01-30
+Warhammer 40:000: Rogue Trader, 11.5, 0.0%, 2025-09-26
+Crypt Custodian, 34.2, 91.7%, 2024-09-24
+Legacy of Kain™ Soul Reaver 1&2 Remastered, 8.2, 1.2%, 2025-09-25
+ENDER MAGNOLIA: Bloom in the Mist, 5.2, 10.0%, 2025-09-25

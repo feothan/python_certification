@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Finally figured out how to reconcile the problems I had between my handling of GITHUB in PyCharm and in the browser. Began the process of getting this organized into more of a portfolio.">
-      <change afterPath="$PROJECT_DIR$/Creative Coding/sample.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Creative Coding/stopwords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Creative Coding/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Creative Coding/text_analyzer_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chord fingerings for launchpad/chord_fingerings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mingus experiments/chord_suggester.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mingus experiments/chord_suggester_with_key_prediction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mingus experiments/songs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch_paper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences.">
+      <change afterPath="$PROJECT_DIR$/Steam API access/get_Steam_game_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Steam API access/get_Steam_games_played_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lyric generator/generate_lyric_from_foot_and_meter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lyric generator/generator_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lyric generator/generator_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,26 +48,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in scratch_paper.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.chord_fingerings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.chord_suggester.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_paper.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in scratch_paper.py.executor": "Run",
+    "Python.chord_fingerings.executor": "Run",
+    "Python.chord_suggester.executor": "Run",
+    "Python.generate_lyric_from_foot_and_meter.executor": "Run",
+    "Python.generator_2.executor": "Run",
+    "Python.generator_3.executor": "Run",
+    "Python.get_Steam_game_list.executor": "Run",
+    "Python.get_Steam_games_played_list.executor": "Run",
+    "Python.lyric_generator.executor": "Run",
+    "Python.scratch_paper.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/mrpet/PycharmProjects/original mini chess & text adventure engine files/Steam API access"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\Steam API access" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\mingus experiments" />
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\Creative Coding" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.chord_suggester">
-    <configuration name="chord_fingerings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.generator_3">
+    <configuration name="generate_lyric_from_foot_and_meter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,11 +86,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chord fingerings for launchpad" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lyric generator" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chord fingerings for launchpad/chord_fingerings.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\lyric generator\generate_lyric_from_foot_and_meter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chord_suggester" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="generator_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mingus experiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lyric generator" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mingus experiments/chord_suggester.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lyric generator/generator_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="chord_suggester_with_vestigial_key_prediction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="generator_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,11 +130,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mingus experiments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lyric generator" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\mingus experiments\chord_suggester_with_vestigial_key_prediction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lyric generator/generator_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_paper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_Steam_game_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Steam API access" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_paper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Steam API access/get_Steam_game_list.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,28 +165,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in scratch_paper.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="get_Steam_games_played_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Steam API access" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/../original mini chess \u0026 text adventure engine files/scratch_paper.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Steam API access/get_Steam_games_played_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.chord_suggester" />
-        <item itemvalue="Python.scratch_paper" />
-        <item itemvalue="Python.chord_suggester_with_vestigial_key_prediction" />
-        <item itemvalue="Python.chord_fingerings" />
-        <item itemvalue="Python tests.Python tests in scratch_paper.py" />
+        <item itemvalue="Python.generator_3" />
+        <item itemvalue="Python.generator_2" />
+        <item itemvalue="Python.generate_lyric_from_foot_and_meter" />
+        <item itemvalue="Python.get_Steam_games_played_list" />
+        <item itemvalue="Python.get_Steam_game_list" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +212,23 @@
       <option name="presentableId" value="Default" />
       <updated>1759290472183</updated>
     </task>
+    <task id="LOCAL-00001" summary="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences.">
+      <option name="closed" value="true" />
+      <created>1759585412778</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759585412778</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences.">
+      <option name="closed" value="true" />
+      <created>1759585522033</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759585522033</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,5 +241,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences." />
   </component>
 </project>
