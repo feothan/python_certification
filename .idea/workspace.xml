@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Been playing with a lyric generator that lets you provide the rhythm (/--/--/-) and gives you random options that are common, uncommon, and rare. Writes a poetry that, while usually nonsensical, is not hideous. XD">
-      <change afterPath="$PROJECT_DIR$/game_systems_playground/game_systems_playground.py" afterDir="false" />
+    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Created Player and Triple class for a highly hypothetical game, but it was a good learning experience. I wanted a different sort of stats system, where a character is not, say, a fighter or a cleric or a mage, but is some point on the Venn diagram of the three. I created the Triple class to make objects for each of the stats in a player. The real trick turned out to be accommodating numbers that don't total 100, but it was a fun challenge. If you enter 1 part elf, 2 parts dwarf, 3 parts orc, it does the math and gives you numbers that total 100. Pleased with this.">
+      <change afterPath="$PROJECT_DIR$/jobs/client_data_cleanup/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobs/client_data_cleanup/clean_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobs/client_data_cleanup/raw_clients.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +51,7 @@
     "Python tests.Python tests in scratch_paper.py.executor": "Run",
     "Python.chord_fingerings.executor": "Run",
     "Python.chord_suggester.executor": "Run",
+    "Python.clean_data.executor": "Run",
     "Python.game_systems_playground.executor": "Run",
     "Python.generate_lyric_from_foot_and_meter.executor": "Run",
     "Python.generator_2.executor": "Run",
@@ -62,6 +65,11 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/mrpet/PycharmProjects/original mini chess & text adventure engine files/Steam API access"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,11 +77,34 @@
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\Steam API access" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\jobs\client_data_cleanup" />
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\mingus experiments" />
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\Creative Coding" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.game_systems_playground">
+  <component name="RunManager" selected="Python.clean_data">
+    <configuration name="clean_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="original mini chess &amp; text adventure engine files" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs/client_data_cleanup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jobs/client_data_cleanup/clean_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="game_systems_playground" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
@@ -88,28 +119,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game_systems_playground/game_systems_playground.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="generate_lyric_from_foot_and_meter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="original mini chess &amp; text adventure engine files" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lyric generator" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\lyric generator\generate_lyric_from_foot_and_meter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +171,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_Steam_games_played_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hwa_mailing_list_extractor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,11 +180,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Steam API access" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Steam API access/get_Steam_games_played_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hwa_mailing_list_extractor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.clean_data" />
+        <item itemvalue="Python.hwa_mailing_list_extractor" />
         <item itemvalue="Python.game_systems_playground" />
         <item itemvalue="Python.generator_3" />
         <item itemvalue="Python.generator_2" />
-        <item itemvalue="Python.generate_lyric_from_foot_and_meter" />
-        <item itemvalue="Python.get_Steam_games_played_list" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761161566765</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created Player and Triple class for a highly hypothetical game, but it was a good learning experience. I wanted a different sort of stats system, where a character is not, say, a fighter or a cleric or a mage, but is some point on the Venn diagram of the three. I created the Triple class to make objects for each of the stats in a player. The real trick turned out to be accommodating numbers that don't total 100, but it was a fun challenge. If you enter 1 part elf, 2 parts dwarf, 3 parts orc, it does the math and gives you numbers that total 100. Pleased with this.">
+      <option name="closed" value="true" />
+      <created>1761178258087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761178258087</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +267,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Did substantial work on the chord suggester. Have now generated three (pretty cool) progressions to play with. Spent a ton of time experimenting with predicting key signatures based strictly on chord progressions. Reached 10/12 success (employing an established algorithm) but wound up going another direction with the chord suggester. Namely, getting key signature info from the internet. Useful learning experiences." />
     <MESSAGE value="Been playing with a lyric generator that lets you provide the rhythm (/--/--/-) and gives you random options that are common, uncommon, and rare. Writes a poetry that, while usually nonsensical, is not hideous. XD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Been playing with a lyric generator that lets you provide the rhythm (/--/--/-) and gives you random options that are common, uncommon, and rare. Writes a poetry that, while usually nonsensical, is not hideous. XD" />
+    <MESSAGE value="Created Player and Triple class for a highly hypothetical game, but it was a good learning experience. I wanted a different sort of stats system, where a character is not, say, a fighter or a cleric or a mage, but is some point on the Venn diagram of the three. I created the Triple class to make objects for each of the stats in a player. The real trick turned out to be accommodating numbers that don't total 100, but it was a fun challenge. If you enter 1 part elf, 2 parts dwarf, 3 parts orc, it does the math and gives you numbers that total 100. Pleased with this." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Player and Triple class for a highly hypothetical game, but it was a good learning experience. I wanted a different sort of stats system, where a character is not, say, a fighter or a cleric or a mage, but is some point on the Venn diagram of the three. I created the Triple class to make objects for each of the stats in a player. The real trick turned out to be accommodating numbers that don't total 100, but it was a fun challenge. If you enter 1 part elf, 2 parts dwarf, 3 parts orc, it does the math and gives you numbers that total 100. Pleased with this." />
   </component>
 </project>
