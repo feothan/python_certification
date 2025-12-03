@@ -1,4 +1,5 @@
 import random
+from datetime import date
 
 writing_seeds = [
     "A doorway where sound dies.",
@@ -38,6 +39,25 @@ coding_seeds = [
     "Generate a simple tilemap in nested lists."
 ]
 
-print("writing:", writing_seeds[random.randint(0, len(writing_seeds) - 1)])
-print("music:", music_seeds[random.randint(0, len(music_seeds) - 1)])
-print("coding:", coding_seeds[random.randint(0, len(coding_seeds) - 1)])
+today = date.today()
+
+try:
+    with open("latest_date.txt", 'r') as file:
+        last_date = file.read()
+        if today > last_date:
+            get_new_seeds = True
+        else:
+            get_new_seeds = False
+
+except FileNotFoundError:
+    with open("latest_date.txt", 'w') as file:
+        file.write(today)
+
+
+
+writing = writing_seeds[random.randint(0, len(writing_seeds) - 1)]
+music = music_seeds[random.randint(0, len(music_seeds) - 1)]
+coding = coding_seeds[random.randint(0, len(coding_seeds) - 1)]
+
+
+
