@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Made the basic &quot;daily seeds&quot; project, with absolutely zero perks. :) Gives random prompts for writing, music, and coding.">
-      <change afterPath="$PROJECT_DIR$/new story builder/new_story_builder.py" afterDir="false" />
+    <list default="true" id="268c7c94-e77c-4e10-9fe5-4b4a1692d6b1" name="Changes" comment="Made a very simple randomizer for my &quot;voltage&quot; character interaction method.">
+      <change afterPath="$PROJECT_DIR$/Advent of Code/puzzle_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Advent of Code/puzzle_input_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/word count monitor/count_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/word count monitor/word_count_monitor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily seeds/daily_seeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/daily seeds/daily_seeds.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,7 @@
     "Python.chord_fingerings.executor": "Run",
     "Python.chord_suggester.executor": "Run",
     "Python.clean_data.executor": "Run",
+    "Python.count_app.executor": "Run",
     "Python.daily_seeds.executor": "Run",
     "Python.game_systems_playground.executor": "Run",
     "Python.generate_lyric_from_foot_and_meter.executor": "Run",
@@ -60,7 +63,9 @@
     "Python.get_Steam_games_played_list.executor": "Run",
     "Python.lyric_generator.executor": "Run",
     "Python.new_story_builder.executor": "Run",
+    "Python.puzzle_1.executor": "Run",
     "Python.scratch_paper.executor": "Run",
+    "Python.word_count_monitor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -83,8 +88,8 @@
       <recent name="C:\Users\mrpet\PycharmProjects\original mini chess &amp; text adventure engine files\Creative Coding" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.new_story_builder">
-    <configuration name="clean_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.puzzle_1">
+    <configuration name="count_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,11 +98,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs/client_data_cleanup" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word count monitor" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jobs/client_data_cleanup/clean_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word count monitor/count_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,50 +133,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="game_systems_playground" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="original mini chess &amp; text adventure engine files" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/game_systems_playground" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game_systems_playground/game_systems_playground.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="hwa_mailing_list_extractor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="original mini chess &amp; text adventure engine files" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hwa_mailing_list_extractor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="new_story_builder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="original mini chess &amp; text adventure engine files" />
       <option name="ENV_FILES" value="" />
@@ -194,13 +155,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="puzzle_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="original mini chess &amp; text adventure engine files" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Advent of Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Advent of Code/puzzle_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="word_count_monitor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="original mini chess &amp; text adventure engine files" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word count monitor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word count monitor/word_count_monitor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.puzzle_1" />
+        <item itemvalue="Python.count_app" />
+        <item itemvalue="Python.word_count_monitor" />
         <item itemvalue="Python.new_story_builder" />
         <item itemvalue="Python.daily_seeds" />
-        <item itemvalue="Python.clean_data" />
-        <item itemvalue="Python.hwa_mailing_list_extractor" />
-        <item itemvalue="Python.game_systems_playground" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763605785659</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made a very simple randomizer for my &quot;voltage&quot; character interaction method.">
+      <option name="closed" value="true" />
+      <created>1764800283543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764800283543</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +300,7 @@
     <MESSAGE value="Created Player and Triple class for a highly hypothetical game, but it was a good learning experience. I wanted a different sort of stats system, where a character is not, say, a fighter or a cleric or a mage, but is some point on the Venn diagram of the three. I created the Triple class to make objects for each of the stats in a player. The real trick turned out to be accommodating numbers that don't total 100, but it was a fun challenge. If you enter 1 part elf, 2 parts dwarf, 3 parts orc, it does the math and gives you numbers that total 100. Pleased with this." />
     <MESSAGE value="Did the first in series of jobs/microprojects, this one cleaning the data in a csv using pandas--standardized names and dates and validating email addresses." />
     <MESSAGE value="Made the basic &quot;daily seeds&quot; project, with absolutely zero perks. :) Gives random prompts for writing, music, and coding." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the basic &quot;daily seeds&quot; project, with absolutely zero perks. :) Gives random prompts for writing, music, and coding." />
+    <MESSAGE value="Made a very simple randomizer for my &quot;voltage&quot; character interaction method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a very simple randomizer for my &quot;voltage&quot; character interaction method." />
   </component>
 </project>
